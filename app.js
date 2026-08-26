@@ -24,10 +24,13 @@ function initNeuralCanvas() {
   let animationFrameId;
 
   // Configuration
-  const nodeCount = 28;
+  const nodeCount = 42;
   const nodes = [];
-  const maxDistance = 110;
+  const maxDistance = 120;
   let mouse = { x: -1000, y: -1000 };
+
+  // Synaptic pulse signals
+  const pulses = [];
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -40,14 +43,18 @@ function initNeuralCanvas() {
 
   // Create Nodes
   for (let i = 0; i < nodeCount; i++) {
+    const typeRand = Math.random();
+    let type = 'default';
+    if (typeRand > 0.82) type = 'coral';
+    else if (typeRand > 0.68) type = 'lime';
+
     nodes.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.8,
-      vy: (Math.random() - 0.5) * 0.8,
-      radius: Math.random() * 2.5 + 1.5,
-      baseRadius: Math.random() * 2.5 + 1.5,
-      isHighlighted: Math.random() > 0.8
+      vx: (Math.random() - 0.5) * 0.75,
+      vy: (Math.random() - 0.5) * 0.75,
+      radius: type === 'default' ? (Math.random() * 2 + 1.5) : 3.5,
+      type: type
     });
   }
 
@@ -71,8 +78,8 @@ function initNeuralCanvas() {
     ctx.clearRect(0, 0, width, height);
 
     // Draw Crosshair Grid Dots in background
-    ctx.fillStyle = 'rgba(26, 26, 26, 0.08)';
-    const gridSize = 32;
+    ctx.fillStyle = 'rgba(26, 26, 26, 0.07)';
+    const gridSize = 28;
     for (let x = 0; x < width; x += gridSize) {
       for (let y = 0; y < height; y += gridSize) {
         ctx.fillRect(x, y, 1.5, 1.5);
@@ -95,16 +102,30 @@ function initNeuralCanvas() {
       const dy = mouse.y - node.y;
       const distToMouse = Math.sqrt(dx * dx + dy * dy);
 
-      if (distToMouse < 100) {
-        node.x -= dx * 0.02;
-        node.y -= dy * 0.02;
+      if (distToMouse < 120) {
+        node.x -= dx * 0.025;
+        node.y -= dy * 0.025;
       }
 
       // Draw Node
       ctx.beginPath();
       ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-      ctx.fillStyle = node.isHighlighted ? '#FF4D4D' : '#1A1A1A';
+      if (node.type === 'coral') {
+        ctx.fillStyle = '#FF4D4D';
+        ctx.shadowColor = '#FF4D4D';
+        ctx.shadowBlur = 6;
+      } else if (node.type === 'lime') {
+        ctx.fillStyle = '#1A1A1A';
+        ctx.strokeStyle = '#D4FF33';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+      } else {
+        ctx.fillStyle = '#1A1A1A';
+        ctx.shadowBlur = 0;
+      }
       ctx.fill();
+      ctx.shadowBlur = 0;
 
       // Connect Nodes with Lines
       for (let j = i + 1; j < nodes.length; j++) {
@@ -116,13 +137,45 @@ function initNeuralCanvas() {
           ctx.moveTo(node.x, node.y);
           ctx.lineTo(other.x, other.y);
           const opacity = (1 - dist / maxDistance) * 0.35;
-          ctx.strokeStyle = (node.isHighlighted || other.isHighlighted)
-            ? `rgba(255, 77, 77, ${opacity * 1.5})`
-            : `rgba(26, 26, 26, ${opacity})`;
+          if (node.type === 'coral' || other.type === 'coral') {
+            ctx.strokeStyle = `rgba(255, 77, 77, ${opacity * 1.6})`;
+          } else {
+            ctx.strokeStyle = `rgba(26, 26, 26, ${opacity})`;
+          }
           ctx.lineWidth = 1;
           ctx.stroke();
+
+          // Occasionally spawn pulse along active edge
+          if (Math.random() < 0.0006 && pulses.length < 8) {
+            pulses.push({
+              x1: node.x, y1: node.y,
+              x2: other.x, y2: other.y,
+              progress: 0,
+              speed: Math.random() * 0.02 + 0.015,
+              color: node.type === 'coral' ? '#FF4D4D' : '#1A1A1A'
+            });
+          }
         }
       }
+    }
+
+    // Draw traveling synaptic pulses
+    for (let p = pulses.length - 1; p >= 0; p--) {
+      const pulse = pulses[p];
+      pulse.progress += pulse.speed;
+
+      if (pulse.progress >= 1) {
+        pulses.splice(p, 1);
+        continue;
+      }
+
+      const px = pulse.x1 + (pulse.x2 - pulse.x1) * pulse.progress;
+      const py = pulse.y1 + (pulse.y2 - pulse.y1) * pulse.progress;
+
+      ctx.beginPath();
+      ctx.arc(px, py, 2, 0, Math.PI * 2);
+      ctx.fillStyle = pulse.color;
+      ctx.fill();
     }
 
     animationFrameId = requestAnimationFrame(animate);
