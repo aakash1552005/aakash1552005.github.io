@@ -443,7 +443,7 @@ button, input, textarea {
 }
 
 /* =========================================================
-   BOLD ICONIC EDITORIAL IDENTITY CARD (HERO)
+   CREATIVE EDITORIAL PORTRAIT HERO CARD
    ========================================================= */
 .hero-visual {
   position: relative;
@@ -451,55 +451,43 @@ button, input, textarea {
   justify-content: center;
 }
 
-.identity-card-box {
+.hero-portrait-card {
   width: 100%;
-  max-width: 500px;
+  max-width: 440px;
   background-color: #FAF8F2;
   border: 1.5px solid var(--border-black);
-  box-shadow: 8px 8px 0px var(--accent-lime);
-  padding: 32px 30px;
+  box-shadow: 10px 10px 0px var(--accent-lime);
+  padding: 12px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 380px;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
   user-select: none;
 }
 
-.identity-card-box:hover {
+.hero-portrait-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 12px 12px 0px var(--accent-coral);
+  box-shadow: 14px 14px 0px var(--accent-coral);
 }
 
-/* Top Meta Bar */
-.identity-top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 18px;
-  border-bottom: 1px dashed rgba(26, 26, 26, 0.3);
-  margin-bottom: 24px;
-}
-
-.identity-badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background-color: var(--text-black);
+/* Floating Top Status Badge */
+.portrait-tag-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 5;
+  background-color: #131915;
   color: var(--accent-lime);
-  padding: 4px 10px;
+  border: 1px solid var(--border-black);
+  padding: 5px 12px;
   font-family: var(--font-mono);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 1px;
-}
-
-.identity-coords {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 600;
-  color: #777777;
-  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 3px 3px 0px var(--border-black);
 }
 
 .live-pulse {
@@ -517,102 +505,49 @@ button, input, textarea {
   100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-/* Massive Iconic Name Typography */
-.identity-main-name {
-  font-family: var(--font-heading);
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 0.95;
-  color: var(--text-black);
-  margin-bottom: 24px;
-}
-
-.name-line-1 {
-  font-size: 52px;
-  text-transform: uppercase;
-}
-
-.name-line-2 {
-  font-size: 52px;
-  display: flex;
-  align-items: baseline;
-  color: var(--text-black);
-}
-
-.name-initials {
-  color: var(--text-black);
-}
-
-.name-dot-accent {
-  color: var(--accent-coral);
-  font-size: 56px;
-  margin-left: 2px;
-}
-
-/* Specialization Pillars Grid */
-.identity-tags-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 28px;
-}
-
-.id-tag {
-  background-color: #EFEFE6;
+/* Portrait Image Wrapper */
+.portrait-img-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
   border: 1px solid var(--border-black);
-  padding: 8px 12px;
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--text-black);
-  transition: all 0.15s ease;
+  background-color: #E6E2D8;
+  position: relative;
 }
 
-.id-tag:hover {
-  background-color: var(--accent-lime);
-  transform: translate(-1px, -1px);
+.hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.tag-hash {
-  color: var(--accent-coral);
-  font-weight: 800;
-  margin-right: 2px;
+.hero-portrait-card:hover .hero-portrait-img {
+  transform: scale(1.03);
 }
 
-/* Bottom Engineering Stamp */
-.identity-footer-stamp {
+/* Bottom Editorial Meta Stamp */
+.portrait-footer-bar {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-black);
+  padding: 10px 4px 2px 4px;
 }
 
-.stamp-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.stamp-label {
+.portrait-coords {
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 10px;
   font-weight: 700;
-  color: #888888;
-  letter-spacing: 1px;
+  color: #666666;
+  letter-spacing: 0.5px;
 }
 
-.stamp-val {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-black);
-}
-
-.stamp-status {
+.portrait-status-pill {
   background-color: var(--accent-lime);
   border: 1px solid var(--border-black);
-  padding: 3px 8px;
+  padding: 3px 9px;
   font-family: var(--font-mono);
   font-size: 9.5px;
   font-weight: 800;
