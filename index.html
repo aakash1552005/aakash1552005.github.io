@@ -717,10 +717,13 @@
             </div>
           </div>
 
-          <!-- Right Column: Interactive Form with Accessible Labels & Spam Protection -->
+          <!-- Right Column: Interactive Form with Accessible Labels & Web3Forms Backend -->
           <div class="contact-right">
             <form class="contact-form" id="contactForm" aria-label="Contact form">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="6370c525-a55b-41e6-8dbc-9043e53ab86a">
               <!-- Anti-Spam Honeypot Field (invisible to humans) -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none !important;">
               <input type="text" name="_gotcha" id="formHoney" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
 
               <div class="form-group">

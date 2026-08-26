@@ -164,7 +164,7 @@ function initImagePlaceholder() {
 }
 
 /* =========================================================
-   3. Contact Form Submission Handling
+   3. Contact Form Submission Handling (Web3Forms API)
    ========================================================= */
 function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -173,7 +173,7 @@ function initContactForm() {
 
   if (!form || !feedback) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     // Anti-spam honeypot check
@@ -195,26 +195,41 @@ function initContactForm() {
 
     // Button loading state
     const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '<span>Transmitting...</span>';
+    submitBtn.innerHTML = '<span>Transmitting message...</span>';
     submitBtn.disabled = true;
+    feedback.className = 'form-feedback';
+    feedback.style.display = 'none';
 
-    // Simulate backend delivery / mailto preparation
-    setTimeout(() => {
-      feedback.className = 'form-feedback success';
-      feedback.innerHTML = `✓ Thank you, ${name}! Your message has been received. I will reply to <strong>${email}</strong> promptly.`;
-      form.reset();
+    try {
+      const formData = new FormData(form);
+      formData.append('subject', `🚀 New Portfolio Inquiry from ${name}`);
+      formData.append('from_name', name);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        feedback.className = 'form-feedback success';
+        feedback.innerHTML = `✓ Thank you, ${name}! Your message was delivered directly to Aakash's inbox. I'll get back to you at <strong>${email}</strong> shortly.`;
+        feedback.style.display = 'block';
+        form.reset();
+      } else {
+        feedback.className = 'form-feedback error';
+        feedback.textContent = data.message || 'Something went wrong. Please try again or email directly.';
+        feedback.style.display = 'block';
+      }
+    } catch (err) {
+      feedback.className = 'form-feedback error';
+      feedback.textContent = 'Network error. Please check your connection or contact me via email.';
+      feedback.style.display = 'block';
+    } finally {
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
-
-      // Optional mailto fallback
-      const mailtoLink = `mailto:aakash1552005@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nSender Email: ' + email)}`;
-      const fallbackLink = document.createElement('a');
-      fallbackLink.href = mailtoLink;
-      fallbackLink.style.display = 'none';
-      document.body.appendChild(fallbackLink);
-      fallbackLink.click();
-      document.body.removeChild(fallbackLink);
-    }, 800);
+    }
   });
 }
 
