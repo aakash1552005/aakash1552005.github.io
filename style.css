@@ -700,29 +700,24 @@ button, input, textarea {
 .run-play-icon {
   font-size: 10px;
 }
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.6;
-}
 
 /* =========================================================
-   MARQUEE TICKER BANNER
+   MARQUEE TICKER BANNER (SOLID BLACK BAND)
    ========================================================= */
 .ticker-section {
-  background-color: var(--bg-dark);
-  color: var(--accent-lime);
+  background-color: #131915;
+  border-top: 1px solid var(--border-black);
+  border-bottom: 1px solid var(--border-black);
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 1px solid var(--border-black);
-  padding: 12px 0;
+  padding: 14px 0;
+  user-select: none;
 }
 
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: marquee-scroll 26s linear infinite;
+  animation: marquee-scroll 24s linear infinite;
 }
 
 .ticker-track:hover {
@@ -734,15 +729,16 @@ button, input, textarea {
   align-items: center;
   gap: 28px;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
+  color: #F4F0E6;
   padding-right: 28px;
 }
 
 .ticker-dot {
-  color: var(--accent-coral);
-  font-size: 18px;
+  color: var(--accent-lime);
+  font-size: 16px;
   line-height: 1;
 }
 
