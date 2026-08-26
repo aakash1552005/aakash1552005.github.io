@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aakash-portfolio.vercel.app/sitemap.xml
+Sitemap: https://aakash1552005.github.io/sitemap.xml
