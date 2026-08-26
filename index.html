@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakash S S | AI &amp; Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Aakash S S — AI & Machine Learning Engineer and Data Scientist based in Chennai, India. Specializing in Deep Learning, Computer Vision, NLP, and Data Analytics.">
+  <meta name="keywords" content="Aakash S S, AI Engineer, Machine Learning Engineer, Data Scientist, Vel Tech University, Chennai, TensorFlow, Computer Vision, Python">
+  <meta name="author" content="Aakash S S">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aakash S S | AI &amp; Machine Learning Engineer">
+  <meta property="og:description" content="Turning data into decisions. AI & Machine Learning Engineer with experience at RINEX Technologies and AICTE IDEA Lab.">
+  <meta property="og:image" content="headshot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aakash S S | AI &amp; ML Engineer">
+  <meta name="twitter:description" content="Turning data into decisions. Portfolio of Aakash S S.">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Comprehensive JSON-LD Structured Data for Google First-Page SEO Ranking -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://aakash1552005.github.io/#website",
+        "url": "https://aakash1552005.github.io/",
+        "name": "Aakash S S | AI & Machine Learning Engineer Portfolio",
+        "description": "Official developer portfolio of Aakash S S — AI & Machine Learning Engineer and Data Scientist specializing in Deep Learning, Computer Vision, MLOps, and Predictive Analytics.",
+        "publisher": {
+          "@id": "https://aakash1552005.github.io/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://aakash1552005.github.io/#profilepage",
+        "url": "https://aakash1552005.github.io/",
+        "name": "Aakash S S — AI & Machine Learning Engineer",
+        "isPartOf": {
+          "@id": "https://aakash1552005.github.io/#website"
+        },
+        "about": {
+          "@id": "https://aakash1552005.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://aakash1552005.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://aakash1552005.github.io/#person",
+        "name": "Aakash S S",
+        "alternateName": ["AAKASH S S", "Aakash SS", "Aakash S S AI Engineer", "Aakash S S Chennai"],
+        "jobTitle": "AI & Machine Learning Engineer",
+        "description": "AI & Machine Learning Engineer building predictive models, computer vision systems, RAG applications, and production MLOps pipelines.",
+        "telephone": "+918825909003",
+        "email": "aakash1552005@gmail.com",
+        "url": "https://aakash1552005.github.io/",
+        "image": "headshot.jpg",
+        "sameAs": [
+          "https://github.com/aakash1552005",
+          "https://www.linkedin.com/in/aakash-s-s-88b91a301"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "India"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Vel Tech University",
+          "address": "Chennai, Tamil Nadu, India"
+        },
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Computer Vision",
+          "Natural Language Processing",
+          "MLOps",
+          "Data Science",
+          "TensorFlow",
+          "Keras",
+          "Scikit-learn",
+          "XGBoost",
+          "FastAPI",
+          "Kubernetes",
+          "Docker",
+          "MLflow",
+          "Power BI",
+          "Python"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==================== HEADER (NAVBAR) ==================== -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <!-- Left: Logo & Name -->
+      <a href="#top" class="logo-group" aria-label="Aakash S S Home">
+        <div class="logo-badge">A</div>
+        <span class="logo-text">Aakash S S</span>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#experience" class="nav-link">EXPERIENCE</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Right: Status + Socials + Resume CTA -->
+      <div class="header-actions">
+        <div class="status-indicator" title="Actively looking for AI/ML roles">
+          <span class="pulse-dot"></span>
+          <span class="status-text">OPEN TO OPPORTUNITIES</span>
+        </div>
+
+        <!-- GitHub Icon -->
+        <a href="https://github.com/aakash1552005" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/aakash-s-s-88b91a301" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+          </svg>
+        </a>
+
+        <!-- Resume Button -->
+        <a href="#resume-modal" class="btn-resume" id="resumeBtn">Resume ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">&gt;_ AI / ML ENGINEER · CHENNAI, IN</div>
+          
+          <h1 class="hero-title">
+            Turning data<br>
+            <span class="highlight-coral">into decisions.</span>
+          </h1>
+
+          <p class="hero-description">
+            B.Tech in Artificial Intelligence &amp; Data Science at Vel Tech University. I build practical AI systems, computer vision models, and data analytics pipelines — transforming data into measurable business outcomes.
+          </p>
+
+          <!-- Button and Link Alignment Container -->
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">View my work &gt;</a>
+            <a href="#contact" class="btn-secondary">Let's talk ↗</a>
+          </div>
+
+          <!-- Grouped floating quote with proper styling -->
+          <div class="hero-quote">
+            "I don't just write code — I build things that work in the real world."
+          </div>
+        </div>
+
+        <!-- Right Architectural Graphic / Image Box -->
+        <div class="hero-visual">
+          <div class="brutalist-shadow-box">
+            <div class="visual-canvas-container" id="visualContainer">
+              <!-- Intersecting Red Crosshair Grid Lines -->
+              <div class="crosshair-v"></div>
+              <div class="crosshair-h"></div>
+              
+              <!-- Architectural Coordinates / Info Labels -->
+              <div class="coord-label top-left">SYS_REF: 13.0827° N, 80.2707° E</div>
+              <div class="coord-label bottom-left">ML_PIPELINE: ACTIVE</div>
+              <div class="coord-label top-right">MODEL: CNN / TF-IDF</div>
+
+              <!-- Headshot Frame with Brutalist High-Contrast Styling -->
+              <div class="headshot-container" id="avatarBox" title="Click to swap/upload profile photo">
+                <img src="headshot.jpg" alt="Aakash S S - AI & ML Engineer" class="headshot-img" id="headshotImg">
+                <div class="headshot-overlay">
+                  <span class="headshot-tag">AAKASH.S.S</span>
+                </div>
+              </div>
+
+              <!-- Interactive Node Visual Canvas -->
+              <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MARQUEE TICKER BANNER ==================== -->
+    <section class="ticker-section" aria-label="Technical specialties ticker">
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>MACHINE LEARNING</span> <span class="ticker-dot">·</span>
+          <span>DEEP LEARNING</span> <span class="ticker-dot">·</span>
+          <span>COMPUTER VISION</span> <span class="ticker-dot">·</span>
+          <span>NLP</span> <span class="ticker-dot">·</span>
+          <span>DATA SCIENCE</span> <span class="ticker-dot">·</span>
+          <span>POWER BI</span> <span class="ticker-dot">·</span>
+          <span>EMBEDDED AI &amp; IOT</span> <span class="ticker-dot">·</span>
+          <span>PYTHON</span> <span class="ticker-dot">·</span>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>MACHINE LEARNING</span> <span class="ticker-dot">·</span>
+          <span>DEEP LEARNING</span> <span class="ticker-dot">·</span>
+          <span>COMPUTER VISION</span> <span class="ticker-dot">·</span>
+          <span>NLP</span> <span class="ticker-dot">·</span>
+          <span>DATA SCIENCE</span> <span class="ticker-dot">·</span>
+          <span>POWER BI</span> <span class="ticker-dot">·</span>
+          <span>EMBEDDED AI &amp; IOT</span> <span class="ticker-dot">·</span>
+          <span>PYTHON</span> <span class="ticker-dot">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 01 / PROFILE (ABOUT) ==================== -->
+    <section class="section profile-section" id="about">
+      <div class="section-container">
+        <div class="profile-top-grid">
+          <!-- Left Column -->
+          <div class="profile-left">
+            <div class="section-eyebrow">01 / PROFILE</div>
+            <h2 class="section-heading">
+              The engineer<br>
+              <span class="highlight-coral">behind the code.</span>
+            </h2>
+          </div>
+
+          <!-- Right Column -->
+          <div class="profile-right">
+            <p class="profile-bio">
+              AI &amp; Machine Learning Engineer — I build predictive models and embedded AI systems, from raw data to deployed hardware. My work spans computer vision, NLP, and data analytics, backed by hands-on experience across the full ML lifecycle: preprocessing, feature engineering, model evaluation, and stakeholder-facing reporting, gained through a data science internship at RINEX Technologies and an applied AI/embedded systems role at AICTE Intern.
+            </p>
+            <div class="profile-mantra">
+              <span class="sparkle-icon">✦</span> Engineer by design. Problem-solver by nature.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Highlight Cards -->
+        <div class="highlight-cards-grid">
+          <!-- Card 1 -->
+          <div class="highlight-card">
+            <div class="card-num">01</div>
+            <h3 class="card-title">Predictive Modeling &amp; ML</h3>
+            <p class="card-desc">
+              Built and evaluated classification, regression, and NLP models — including a 96%-accuracy CNN classifier and a spam detector with 97% precision — using Scikit-learn, TensorFlow, and Keras.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="highlight-card">
+            <div class="card-num">02</div>
+            <h3 class="card-title">Data Science &amp; Analytics</h3>
+            <p class="card-desc">
+              End-to-end data preprocessing, EDA, and feature engineering on real-world datasets, translated into decision-ready dashboards using Power BI and DAX.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="highlight-card">
+            <div class="card-num">03</div>
+            <h3 class="card-title">Embedded AI &amp; Prototyping</h3>
+            <p class="card-desc">
+              Hands-on integration of AI models with ESP32-CAM and Arduino hardware at AICTE Intern — rapid prototyping, testing, and deployment of AI-enabled embedded systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 02 / SELECTED WORK (PROJECTS) ==================== -->
+    <section class="section work-section" id="work">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="work-header">
+          <div class="work-header-left">
+            <div class="section-eyebrow">02 / SELECTED WORK</div>
+            <h2 class="section-heading">
+              Proof, not<br>
+              <span class="highlight-coral">promises.</span>
+            </h2>
+          </div>
+          <div class="work-header-right">
+            <p class="work-subtext">
+              A curated selection of production-ready AI systems, predictive pipelines, and applied research projects built with measurable real-world outcomes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projects Grid (4 Flagship Projects) -->
+        <div class="projects-grid">
+          <!-- Project 1: Telco Customer Churn MLOps Platform -->
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+              <span class="project-category">MLOPS &amp; PRODUCTION ML</span>
+            </div>
+            <h3 class="project-title">Telco Customer Churn MLOps Platform</h3>
+            
+            <div class="project-block">
+              <div class="block-label">THE PROBLEM</div>
+              <p class="block-text">
+                ML models often work in notebooks but break down in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak experiment lineage, and undetected model drift. This project builds an end-to-end, reproducible MLOps system that automates the journey from versioned customer data to monitored production inference and model promotion.
+              </p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-label">OUTCOME</div>
+              <div class="outcome-val">0.847 ROC-AUC · Recall improved 48% → 80% through threshold optimization · Automated CI/CD, experiment tracking, deployment, monitoring &amp; drift-aware retraining</div>
+            </div>
+
+            <div class="project-tags">
+              <span>Python</span> · <span>XGBoost</span> · <span>FastAPI</span> · <span>Docker</span> · <span>Kubernetes</span> · <span>MLflow</span> · <span>Prometheus/Grafana</span> · <span>Jenkins CI/CD</span> · <span>DVC</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aakash1552005/telco-churn-mlops" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub Repository ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: TN Government AI Scheme Assistant -->
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+              <span class="project-category">CONVERSATIONAL AI &amp; RAG</span>
+            </div>
+            <h3 class="project-title">TN Government AI Scheme Assistant</h3>
+            
+            <div class="project-block">
+              <div class="block-label">THE PROBLEM</div>
+              <p class="block-text">
+                Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits, eligibility requirements, and application information. The challenge is to provide reliable English/Tamil answers from this scattered knowledge without hallucinating or returning irrelevant information.
+              </p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-label">OUTCOME</div>
+              <div class="outcome-val">86/86 validation tests passed · 100% pass rate on 50-query benchmark · Bilingual RAG assistant deployed for real-time scheme discovery</div>
+            </div>
+
+            <div class="project-tags">
+              <span>FastAPI</span> · <span>Next.js</span> · <span>PostgreSQL</span> · <span>ChromaDB</span> · <span>Groq LLaMA 3.3</span> · <span>RAG</span> · <span>Railway</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aakash1552005/TNGov-AI-Assistant" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub Repository ↗</span>
+              </a>
+              <a href="https://frontend-production-ee49.up.railway.app" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                <span>Live Demo ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: AI-Based Smart Garbage Segregation Bin -->
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">03</span>
+              <span class="project-category">COMPUTER VISION &amp; EDGE IOT</span>
+            </div>
+            <h3 class="project-title">AI-Based Smart Garbage Segregation Bin</h3>
+            
+            <div class="project-block">
+              <div class="block-label">THE PROBLEM</div>
+              <p class="block-text">
+                Manual waste segregation is inefficient, inconsistent, and difficult to scale. Disposal points need a low-cost autonomous system capable of identifying and separating multiple waste types in real time, while remaining functional when vision-based classification is unavailable.
+              </p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-label">OUTCOME</div>
+              <div class="outcome-val">Real-time 5-category waste classification with sensor-based fallback, enabling autonomous segregation under both AI-enabled and degraded operating conditions.</div>
+            </div>
+
+            <div class="project-tags">
+              <span>Arduino (C++)</span> · <span>ESP32-CAM</span> · <span>Flask</span> · <span>TensorFlow</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aakash1552005/smart-waste-segregation-bin" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub Repository ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Smart Child Nutrition Deficiency Tracking System -->
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">04</span>
+              <span class="project-category">FULL-STACK &amp; PREDICTIVE ANALYTICS</span>
+            </div>
+            <h3 class="project-title">Smart Child Nutrition Deficiency Tracking System</h3>
+            
+            <div class="project-block">
+              <div class="block-label">THE PROBLEM</div>
+              <p class="block-text">
+                Child nutrition monitoring is often dependent on fragmented and manually maintained growth records, limiting early identification of nutritional risks and making population-level monitoring difficult for health workers.
+              </p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-label">OUTCOME</div>
+              <div class="outcome-val">86.4% risk-classification accuracy · 70% high-risk recall · 92.69% mean accuracy across 7 deficiency predictions · 6-month nutrition trend forecasting</div>
+            </div>
+
+            <div class="project-tags">
+              <span>Next.js</span> · <span>TypeScript</span> · <span>Tailwind CSS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aakash1552005/Smart-Child-Nutrition-Deficiency-Tracking-System" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub Repository ↗</span>
+              </a>
+              <a href="https://smart-child-nutrition-deficiency-tr.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link live-link">
+                <span>Live Demo ↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- GitHub Exploration Card (without eyebrow words) -->
+        <div class="more-work-card">
+          <div class="more-work-content">
+            <h3 class="more-work-title">Looking for more projects, models, and open-source code?</h3>
+            <p class="more-work-desc">
+              Discover my complete collection of machine learning experiments, computer vision pipelines, NLP tools, and exploratory data analytics repositories on GitHub.
+            </p>
+          </div>
+          <a href="https://github.com/aakash1552005" target="_blank" rel="noopener noreferrer" class="btn-primary more-work-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>View All Projects on GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 03 / TOOLKIT (SKILLS) ==================== -->
+    <section class="section toolkit-section" id="skills">
+      <div class="section-container">
+        <div class="toolkit-grid">
+          <!-- Left Column -->
+          <div class="toolkit-left">
+            <div class="section-eyebrow">03 / TOOLKIT</div>
+            <h2 class="section-heading">
+              Built across<br>
+              <span class="highlight-coral">the stack.</span>
+            </h2>
+          </div>
+
+          <!-- Right Column (Resume Accurate Categories) -->
+          <div class="toolkit-right">
+            <!-- Row 1: Programming Languages -->
+            <div class="skill-row">
+              <div class="skill-category">Programming Languages</div>
+              <div class="skill-items">
+                Python · SQL · Java (basics)
+              </div>
+            </div>
+
+            <!-- Row 2: AI & Machine Learning -->
+            <div class="skill-row">
+              <div class="skill-category">AI &amp; Machine Learning</div>
+              <div class="skill-items">
+                Machine Learning · Deep Learning · Computer Vision · NLP · Scikit-learn · TensorFlow · Keras · XGBoost · Random Forest · CNN
+              </div>
+            </div>
+
+            <!-- Row 3: Data Science & Analytics -->
+            <div class="skill-row">
+              <div class="skill-category">Data Science &amp; Analytics</div>
+              <div class="skill-items">
+                Data Cleaning · EDA · Feature Engineering · Predictive Modeling · Statistical Analysis · Model Evaluation · Data Visualization
+              </div>
+            </div>
+
+            <!-- Row 4: Data Engineering -->
+            <div class="skill-row">
+              <div class="skill-category">Data Engineering</div>
+              <div class="skill-items">
+                ETL Pipelines · Data Processing · Pandas · NumPy
+              </div>
+            </div>
+
+            <!-- Row 5: Data Visualization -->
+            <div class="skill-row">
+              <div class="skill-category">Data Visualization</div>
+              <div class="skill-items">
+                Power BI · Tableau · Matplotlib · Seaborn
+              </div>
+            </div>
+
+            <!-- Row 6: Embedded AI & IoT -->
+            <div class="skill-row">
+              <div class="skill-category">Embedded AI &amp; IoT</div>
+              <div class="skill-items">
+                Arduino UNO · ESP32-CAM · IoT · Sensor Integration · Embedded AI
+              </div>
+            </div>
+
+            <!-- Row 7: Tools -->
+            <div class="skill-row">
+              <div class="skill-category">Tools</div>
+              <div class="skill-items">
+                Git · GitHub · Docker · VS Code · Jupyter Notebook · Google Colab
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== CERTIFICATIONS (NEW TO OLD WITH DIRECT PDF VIEWERS) ==================== -->
+        <div class="certifications-block">
+          <div class="cert-eyebrow">CERTIFICATIONS</div>
+          <div class="cert-badges-grid">
+            <!-- 1. Feb 2026: Infosys -->
+            <a href="certificates/infosys_data_visualization_2026.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>Infosys Springboard — Exploring Data Visualization · Feb 2026</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 2. Nov 2025: RINEX -->
+            <a href="certificates/rinex_artificial_intelligence_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF (ID: AI25-RNG0-9116)">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>RINEX (Google for Education Partner) — Artificial Intelligence · Nov 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 3. Nov 2025: RapidMiner -->
+            <a href="certificates/rapidminer_data_engineering_master_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>RapidMiner (Altair) — Data Engineering Master Certification · Nov 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 4. Sep 2025: Deloitte -->
+            <a href="certificates/deloitte_data_analytics_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>Deloitte — Data Analytics Job Simulation · Sep 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 5. Sep 2025: Tata Group -->
+            <a href="certificates/tata_data_visualisation_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>Tata Group — Data Visualisation: Empowering Business with Effective Insights · Sep 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 6. Apr 2025: AWS via Infosys -->
+            <a href="certificates/infosys_aws_solutions_architect_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>Infosys Springboard — AWS Solutions Architect: Security &amp; Data Privacy · Apr 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+
+            <!-- 7. Apr 2025: NVIDIA via Coursera -->
+            <a href="certificates/nvidia_networking_2025.pdf" target="_blank" rel="noopener noreferrer" class="cert-badge" title="View Official Certificate PDF">
+              <div class="cert-badge-left">
+                <span class="check-icon">✓</span>
+                <span>NVIDIA — Introduction to Networking · Apr 2025</span>
+              </div>
+              <span class="cert-badge-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 04 / EXPERIENCE & EDUCATION ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="experience-grid">
+          <!-- Left Column: Experience -->
+          <div class="exp-col">
+            <div class="section-eyebrow">04 / EXPERIENCE</div>
+            <h2 class="section-subheading">Industry Experience</h2>
+
+            <div class="timeline-stack">
+              <!-- Exp 1: AICTE -->
+              <div class="timeline-card">
+                <div class="timeline-period">MAY 2026 – JUL 2026</div>
+                <h3 class="timeline-role">AI &amp; Embedded Systems Intern</h3>
+                <div class="timeline-org">AICTE, Chennai</div>
+                <p class="timeline-desc">
+                  Designed AI-powered software and embedded system solutions — integrated sensors, microcontrollers, and AI models into intelligent hardware. Worked on rapid prototyping, testing, and deployment of AI-enabled embedded systems.
+                </p>
+              </div>
+
+              <!-- Exp 2: RINEX -->
+              <div class="timeline-card">
+                <div class="timeline-period">SEP 2025 – NOV 2025</div>
+                <h3 class="timeline-role">Data Scientist Intern</h3>
+                <div class="timeline-org">RINEX Technologies, Bangalore</div>
+                <p class="timeline-desc">
+                  Worked on end-to-end Data Science and ML projects — data preprocessing, EDA, feature engineering, predictive modeling, and model evaluation on real-world business problems. Developed analytical reports and visualizations to communicate insights to stakeholders.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education -->
+          <div class="edu-col">
+            <div class="section-eyebrow">ACADEMICS</div>
+            <h2 class="section-subheading">Education &amp; Background</h2>
+
+            <div class="timeline-stack">
+              <!-- Edu 1: Vel Tech -->
+              <div class="timeline-card highlight-edu">
+                <div class="timeline-period">AUG 2023 – JUN 2027 · CURRENT</div>
+                <h3 class="timeline-role">B.Tech – CSE (AI &amp; Data Science)</h3>
+                <div class="timeline-org">Vel Tech University, Chennai</div>
+                <div class="timeline-gpa">CGPA: 7.97</div>
+              </div>
+
+              <!-- Edu 2: HSC -->
+              <div class="timeline-card">
+                <div class="timeline-period">2023</div>
+                <h3 class="timeline-role">Higher Secondary Certificate (HSC), CBSE — 64.20%</h3>
+                <div class="timeline-org">Jain Vidyaashram, Chennai</div>
+              </div>
+
+              <!-- Edu 3: AISSE -->
+              <div class="timeline-card">
+                <div class="timeline-period">2021</div>
+                <h3 class="timeline-role">All India Secondary School Examination (AISSE), CBSE — 73.67%</h3>
+                <div class="timeline-org">Jain Vidyaashram, Chennai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 05 / MAKE CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-grid">
+          <!-- Left Column -->
+          <div class="contact-left">
+            <div class="contact-eyebrow">05 / MAKE CONTACT</div>
+            
+            <h2 class="contact-heading">
+              Have a problem<br>
+              <span class="highlight-lime">worth solving?</span>
+            </h2>
+
+            <p class="contact-lead">
+              Whether it's an project, or an opportunity — I'd like to hear from you.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Phone -->
+              <div class="contact-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <a href="tel:+918825909003" class="contact-link">+91 88259 09003</a>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="mailto:aakash1552005@gmail.com" class="contact-link" id="emailCopyBtn">aakash1552005@gmail.com</a>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+                <a href="https://www.linkedin.com/in/aakash-s-s-88b91a301" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <a href="https://github.com/aakash1552005" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form with Accessible Labels & Spam Protection -->
+          <div class="contact-right">
+            <form class="contact-form" id="contactForm" aria-label="Contact form">
+              <!-- Anti-Spam Honeypot Field (invisible to humans) -->
+              <input type="text" name="_gotcha" id="formHoney" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="form-group">
+                <label for="name" class="form-label">YOUR NAME *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Rivera" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">EMAIL ADDRESS *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">MESSAGE *</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send" id="submitBtn">
+                <span class="btn-icon">✈</span>
+                <span class="btn-text">Send message</span>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-badge">A</div>
+        <span class="footer-copy">© 2026 Aakash S S</span>
+      </div>
+
+      <div class="footer-center">
+        "Engineer by design. Problem-solver by nature."
+      </div>
+
+      <div class="footer-right">
+        <a href="#top" class="back-to-top" id="backToTopBtn">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== RESUME MODAL ==================== -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">AAKASH_S_S_RESUME.PDF</div>
+        <button class="modal-close" id="closeModalBtn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Aakash S S</strong> — AI &amp; Machine Learning Engineer</p>
+        <p class="modal-sub">Vel Tech University · CGPA 7.97 · Chennai, TN, India</p>
+        <div class="modal-actions">
+          <a href="AAKASH_resume.pdf" download="Aakash_SS_Resume.pdf" class="btn-primary modal-btn" id="dlResumeBtn">
+            Download PDF ↗
+          </a>
+          <button class="btn-secondary modal-btn" id="previewBtn">
+            Print / Save PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
