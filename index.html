@@ -181,35 +181,50 @@
           </div>
         </div>
 
-        <!-- Right Architectural Graphic / Image Box -->
+        <!-- Right Interactive AI Terminal Playground -->
         <div class="hero-visual">
-          <div class="brutalist-shadow-box">
-            <div class="visual-canvas-container" id="visualContainer">
-              <!-- Intersecting Red Crosshair Grid Lines -->
-              <div class="crosshair-v"></div>
-              <div class="crosshair-h"></div>
-
-              <!-- Top Left Floating ML Metric Card -->
-              <div class="hero-metric-card top-left-card">
-                <div class="metric-card-header">
-                  <span class="metric-pulse-dot"></span>
-                  <span class="metric-tag">PRODUCTION ML</span>
-                </div>
-                <div class="metric-val">0.847 ROC-AUC</div>
-                <div class="metric-sub">Recall Lift 48% → 80% · MLOps</div>
+          <div class="ai-terminal-box">
+            <!-- Terminal Title Bar -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
               </div>
-
-              <!-- Bottom Right Floating ML Metric Card -->
-              <div class="hero-metric-card bottom-right-card">
-                <div class="metric-card-header">
-                  <span class="metric-tag coral">RAG ARCHITECTURE</span>
-                </div>
-                <div class="metric-val">86/86 BENCHMARK</div>
-                <div class="metric-sub">ChromaDB · Groq LLaMA 3.3</div>
+              <div class="terminal-title">aakash@ml-engine: ~ / live-models</div>
+              <div class="terminal-status-pill">
+                <span class="live-pulse"></span>
+                <span>INFERENCE READY</span>
               </div>
+            </div>
 
-              <!-- Interactive Node Visual Canvas -->
-              <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+            <!-- Terminal Tabs / Switcher -->
+            <div class="terminal-tabs" role="tablist" aria-label="Live Model Demos">
+              <button class="terminal-tab active" data-model="churn" role="tab" aria-selected="true" id="tabChurn">
+                <span class="tab-num">01</span> XGBoost Churn
+              </button>
+              <button class="terminal-tab" data-model="rag" role="tab" aria-selected="false" id="tabRag">
+                <span class="tab-num">02</span> RAG Assistant
+              </button>
+              <button class="terminal-tab" data-model="vision" role="tab" aria-selected="false" id="tabVision">
+                <span class="tab-num">03</span> Edge CNN
+              </button>
+            </div>
+
+            <!-- Terminal Screen -->
+            <div class="terminal-screen" id="terminalScreen" tabindex="0" aria-live="polite">
+              <!-- Content rendered dynamically via JS -->
+            </div>
+
+            <!-- Terminal Control Bar -->
+            <div class="terminal-control-bar">
+              <div class="terminal-cmd-display">
+                <span class="cmd-prompt">&gt;_</span>
+                <span class="cmd-text" id="terminalCmd">pipeline.predict(live_payload)</span>
+              </div>
+              <button class="btn-terminal-run" id="terminalRunBtn" aria-label="Execute Live Model Inference">
+                <span class="run-play-icon">▶</span> RUN INFERENCE
+              </button>
             </div>
           </div>
         </div>

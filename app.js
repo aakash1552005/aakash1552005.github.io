@@ -3,7 +3,7 @@
    ========================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initNeuralCanvas();
+  initAITerminalPlayground();
   initContactForm();
   initResumeModal();
   initEmailCopy();
@@ -13,11 +13,168 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =========================================================
-   1. Interactive Neural Network / Data Graph Canvas
+   1. Interactive Live AI Model Playground Terminal
    ========================================================= */
-function initNeuralCanvas() {
-  const canvas = document.getElementById('neuralCanvas');
-  if (!canvas) return;
+function initAITerminalPlayground() {
+  const screen = document.getElementById('terminalScreen');
+  const cmdDisplay = document.getElementById('terminalCmd');
+  const runBtn = document.getElementById('terminalRunBtn');
+  const tabs = document.querySelectorAll('.terminal-tab');
+
+  if (!screen || !cmdDisplay || !runBtn) return;
+
+  let currentModel = 'churn';
+
+  const modelData = {
+    churn: {
+      cmd: 'xgboost_pipeline.predict(customer_id="TEL-9402")',
+      render: (isFresh = false) => {
+        const churnProb = (isFresh ? (Math.random() * 12 + 10) : 14.8).toFixed(1);
+        const latency = (isFresh ? (Math.random() * 6 + 10) : 12.4).toFixed(1);
+        return `
+          <div class="term-row term-comment">// MLOps Pipeline · XGBoost v2.0 · Automated Drift Monitoring</div>
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">INPUT:</span>
+            <span class="term-key">{ tenure: <span class="term-val">"24mo"</span>, contract: <span class="term-val">"Two-Year"</span>, monthly: <span class="term-val">"$78.50"</span> }</span>
+          </div>
+          
+          <div class="term-metrics-box">
+            <div class="term-metric-item">
+              <span class="term-metric-label">MODEL ROC-AUC</span>
+              <span class="term-metric-number">0.847</span>
+            </div>
+            <div class="term-metric-item">
+              <span class="term-metric-label">RECALL LIFT</span>
+              <span class="term-metric-number coral">48% → 80%</span>
+            </div>
+          </div>
+
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">PREDICTION:</span>
+            <span class="term-badge-inline">LOW CHURN RISK (${churnProb}%)</span>
+          </div>
+          <div class="term-row term-success">
+            ✓ Inference: ${latency}ms · Status: 200 OK (Kubernetes Pod / FastAPI)
+          </div>
+        `;
+      }
+    },
+    rag: {
+      cmd: 'vector_store.similarity_search("TN student welfare scholarships")',
+      render: (isFresh = false) => {
+        const simScore = (isFresh ? (Math.random() * 0.04 + 0.94) : 0.968).toFixed(3);
+        const latency = (isFresh ? (Math.random() * 10 + 20) : 24.6).toFixed(1);
+        return `
+          <div class="term-row term-comment">// Conversational AI & RAG · ChromaDB + Groq LLaMA 3.3</div>
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">QUERY:</span>
+            <span class="term-key">"Student scholarship & welfare eligibility"</span>
+          </div>
+          
+          <div class="term-metrics-box">
+            <div class="term-metric-item">
+              <span class="term-metric-label">VECTOR COSINE SIM</span>
+              <span class="term-metric-number">${simScore}</span>
+            </div>
+            <div class="term-metric-item">
+              <span class="term-metric-label">BENCHMARK TESTS</span>
+              <span class="term-metric-number">86/86 (100%)</span>
+            </div>
+          </div>
+
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">CONTEXT:</span>
+            <span class="term-val">"TN Higher Education Scholarship Aid (Scheme #14)"</span>
+          </div>
+          <div class="term-row term-success">
+            ✓ Retrieved in ${latency}ms · Bilingual Stream (English/Tamil)
+          </div>
+        `;
+      }
+    },
+    vision: {
+      cmd: 'cnn_edge_detector.classify(frame_tensor[224, 224, 3])',
+      render: (isFresh = false) => {
+        const conf = (isFresh ? (Math.random() * 3 + 95) : 96.2).toFixed(1);
+        const fps = (isFresh ? (Math.random() * 4 + 28) : 30.2).toFixed(0);
+        return `
+          <div class="term-row term-comment">// Edge Vision AI · ESP32-CAM + TensorFlow Sensor Fallback</div>
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">SENSOR FEED:</span>
+            <span class="term-key">Camera Frame [224x224 RGB] · <span class="term-val">${fps} FPS</span></span>
+          </div>
+          
+          <div class="term-metrics-box">
+            <div class="term-metric-item">
+              <span class="term-metric-label">VISION CONFIDENCE</span>
+              <span class="term-metric-number">${conf}%</span>
+            </div>
+            <div class="term-metric-item">
+              <span class="term-metric-label">SENSOR FALLBACK</span>
+              <span class="term-metric-number coral">ACTIVE (5-CAT)</span>
+            </div>
+          </div>
+
+          <div class="term-row">
+            <span class="term-prompt-icon">&gt;</span>
+            <span class="term-cmd">CLASSIFICATION:</span>
+            <span class="term-badge-inline">RECYCLABLE PLASTIC</span>
+          </div>
+          <div class="term-row term-success">
+            ✓ Microcontroller Servo Command: DISPATCH_BIN_02
+          </div>
+        `;
+      }
+    }
+  };
+
+  function updateScreen(isFresh = false) {
+    const data = modelData[currentModel];
+    if (!data) return;
+
+    cmdDisplay.textContent = data.cmd;
+    screen.innerHTML = data.render(isFresh);
+  }
+
+  // Handle Tab Switching
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      currentModel = tab.getAttribute('data-model');
+      updateScreen(false);
+    });
+  });
+
+  // Handle "Run Inference" Execution
+  runBtn.addEventListener('click', () => {
+    const originalText = runBtn.innerHTML;
+    runBtn.innerHTML = '<span>⚡ COMPENSATING...</span>';
+    runBtn.disabled = true;
+
+    screen.style.opacity = '0.5';
+
+    setTimeout(() => {
+      updateScreen(true);
+      screen.style.opacity = '1';
+      runBtn.innerHTML = originalText;
+      runBtn.disabled = false;
+    }, 280);
+  });
+
+  // Initial Load
+  updateScreen(false);
+}
 
   const ctx = canvas.getContext('2d');
   let width, height;
