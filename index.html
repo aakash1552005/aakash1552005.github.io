@@ -18,6 +18,9 @@
   <meta name="twitter:title" content="Aakash S S | AI &amp; ML Engineer">
   <meta name="twitter:description" content="Turning data into decisions. Portfolio of Aakash S S.">
 
+  <!-- Performance: Preload Above-the-Fold Hero Portrait Image -->
+  <link rel="preload" as="image" href="headshot.jpg" fetchpriority="high">
+
   <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,6 +195,10 @@
                 class="hero-portrait-img"
                 id="headshotImg"
                 loading="eager"
+                fetchpriority="high"
+                decoding="async"
+                width="440"
+                height="420"
               />
             </div>
           </div>
