@@ -267,12 +267,6 @@ function initResumeModal() {
       closeModal();
     }
   });
-
-  if (previewBtn) {
-    previewBtn.addEventListener('click', () => {
-      window.print();
-    });
-  }
 }
 
 /* =========================================================
