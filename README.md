@@ -12,9 +12,9 @@ A high-performance Neo-Brutalist developer portfolio built with architectural la
 ---
 
 ## 🎓 Education
-- **B.Tech – CSE (AI & Data Science)** | Vel Tech University, Chennai (Aug 2023 – Jun 2027) — **CGPA: 7.97**
-- **Higher Secondary Certificate (HSC), CBSE** | Jain Vidyaashram, Chennai (2023) — **64.20%**
-- **All India Secondary School Examination (AISSE), CBSE** | Jain Vidyaashram, Chennai (2021) — **73.67%**
+- **B.Tech – Computer Science & Engineering (AI & Data Science)** | Vel Tech University, Chennai (Aug 2023 – Jun 2027) — **CGPA: 7.97**
+- **All India Senior School Certificate Examination (AISSCE), CBSE** | Jain Vidyaashram, Chennai (2023)
+- **All India Secondary School Examination (AISSE), CBSE** | Jain Vidyaashram, Chennai (2021)
 
 ---
 
