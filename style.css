@@ -443,7 +443,7 @@ button, input, textarea {
 }
 
 /* =========================================================
-   CREATIVE EDITORIAL PORTRAIT HERO CARD
+   CLEAN EDITORIAL PORTRAIT HERO CARD
    ========================================================= */
 .hero-visual {
   position: relative;
@@ -457,7 +457,7 @@ button, input, textarea {
   background-color: #FAF8F2;
   border: 1.5px solid var(--border-black);
   box-shadow: 10px 10px 0px var(--accent-lime);
-  padding: 12px;
+  padding: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -470,45 +470,10 @@ button, input, textarea {
   box-shadow: 14px 14px 0px var(--accent-coral);
 }
 
-/* Floating Top Status Badge */
-.portrait-tag-badge {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  z-index: 5;
-  background-color: #131915;
-  color: var(--accent-lime);
-  border: 1px solid var(--border-black);
-  padding: 5px 12px;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  box-shadow: 3px 3px 0px var(--border-black);
-}
-
-.live-pulse {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #27C93F;
-  box-shadow: 0 0 6px #27C93F;
-  animation: pulseGreen 1.6s infinite;
-}
-
-@keyframes pulseGreen {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
-}
-
 /* Portrait Image Wrapper */
 .portrait-img-wrapper {
   width: 100%;
-  height: 400px;
+  height: 420px;
   overflow: hidden;
   border: 1px solid var(--border-black);
   background-color: #E6E2D8;
@@ -526,34 +491,6 @@ button, input, textarea {
 
 .hero-portrait-card:hover .hero-portrait-img {
   transform: scale(1.03);
-}
-
-/* Bottom Editorial Meta Stamp */
-.portrait-footer-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 4px 2px 4px;
-}
-
-.portrait-coords {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
-  color: #666666;
-  letter-spacing: 0.5px;
-}
-
-.portrait-status-pill {
-  background-color: var(--accent-lime);
-  border: 1px solid var(--border-black);
-  padding: 3px 9px;
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  font-weight: 800;
-  color: var(--text-black);
-  letter-spacing: 0.5px;
-  box-shadow: 2px 2px 0px var(--border-black);
 }
 
 /* =========================================================
