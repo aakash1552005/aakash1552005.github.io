@@ -214,7 +214,7 @@ function initContactForm() {
 
       if (data.success) {
         feedback.className = 'form-feedback success';
-        feedback.innerHTML = `✓ Thank you, ${name}! Your message was delivered directly to Aakash's inbox. I'll get back to you at <strong>${email}</strong> shortly.`;
+        feedback.innerHTML = `✓ Thank you, ${name}! Your message was delivered successfully. I'll get back to you at <strong>${email}</strong> shortly.`;
         feedback.style.display = 'block';
         form.reset();
       } else {
