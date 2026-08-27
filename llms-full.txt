@@ -1,0 +1,79 @@
+# Aakash S S - Full Portfolio & Technical Knowledge Context
+
+## Biographical Overview
+Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently based in Chennai, Tamil Nadu, India. He holds a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Data Science from Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology. He has demonstrated domain expertise across Deep Learning, Computer Vision, Retrieval-Augmented Generation (RAG), and end-to-end MLOps deployment.
+
+## Contact & Profiles
+- Full Name: Aakash S S
+- Email: aakash1552005@gmail.com
+- Telephone: +91 88259 09003
+- Portfolio URL: https://aakash1552005.github.io/
+- GitHub: https://github.com/aakash1552005
+- LinkedIn: https://www.linkedin.com/in/aakash-s-s-88b91a301
+- Location: Chennai, Tamil Nadu, India
+
+## Academic History
+- **Undergraduate Degree**: Bachelor of Technology (B.Tech) in Computer Science and Engineering (Artificial Intelligence and Data Science)
+  - Institution: Vel Tech University, Avadi, Chennai, India
+  - Timeline: 2023 – Present (Expected Graduation: 2027)
+  - Current Academic Standing: CGPA 7.97 / 10.0
+- **Senior Secondary (12th)**: All India Senior School Certificate Examination (AISSCE), CBSE
+  - School: Jain Vidyaashram, Chennai
+  - Year: 2023
+- **Secondary (10th)**: All India Secondary School Examination (AISSE), CBSE
+  - School: Jain Vidyaashram, Chennai
+  - Year: 2021
+
+## Professional Work Experience
+### 1. Machine Learning Intern | RINEX Technologies
+- **Duration**: March 2024 – April 2024
+- **Location**: Remote / Bangalore, India
+- **Key Deliverables**:
+  - Architected and trained machine learning classification and regression pipelines using Python, Scikit-learn, and XGBoost.
+  - Formulated automated data cleaning routines handling missing values, categorical encoding, and outlier mitigation on datasets exceeding 50,000 records.
+  - Performed hyperparameter tuning with Grid Search and Bayesian Optimization, boosting model prediction accuracy by 14%.
+  - Built scalable REST endpoints using FastAPI for real-time model inference.
+
+### 2. Student Coordinator / Technical Mentor | AICTE IDEA Lab
+- **Duration**: July 2023 – Present
+- **Institution**: Vel Tech University
+- **Key Deliverables**:
+  - Led and mentored over 100 undergraduate students in embedded intelligence, sensor fusion, computer vision prototypes, and IoT devices.
+  - Facilitated technical workshops on microcontrollers, Python scripting for automation, and 3D prototyping.
+
+## Technical Skills & Arsenal
+- **Languages**: Python (Advanced), SQL (PostgreSQL, MySQL), C++, HTML5, CSS3, JavaScript (ES6+)
+- **Machine Learning & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, LightGBM, CatBoost, OpenCV, NumPy, Pandas, SciPy, Matplotlib, Seaborn
+- **NLP & Generative AI**: Hugging Face Transformers, LangChain, RAG Pipelines, Vector Embeddings (ChromaDB, FAISS), Sentence Transformers
+- **MLOps & DevOps**: FastAPI, Flask, Docker, Kubernetes basics, Git, GitHub Actions, MLflow, Linux Bash, Vercel, Netlify
+- **Data Analytics & BI**: Power BI, DAX, Excel Advanced Modeling, Statistical Hypothesis Testing, EDA (Exploratory Data Analysis)
+
+## Detailed Project Portfolio
+### Project 1: Traffic Sign Recognition System (Computer Vision / Autonomous Systems)
+- **Problem**: Autonomous vehicles require instant, millimeter-accurate detection and classification of road signs under varying lighting, weather, and occlusions.
+- **Solution**: Developed a Deep Convolutional Neural Network (CNN) trained on the German Traffic Sign Recognition Benchmark (GTSRB) with data augmentation (shear, zoom, contrast shifts).
+- **Results**: Achieved 88.94% top-1 validation accuracy across 43 distinct traffic sign classes with sub-15ms inference latency per frame.
+- **Stack**: Python, TensorFlow, Keras, OpenCV, NumPy, Streamlit.
+
+### Project 2: Pediatric Pneumonia Detection via Chest Radiography (Medical AI)
+- **Problem**: Early pediatric pneumonia diagnosis is vital in clinical environments with limited radiologist availability.
+- **Solution**: Built a medical deep learning classifier utilizing fine-tuned transfer learning architectures with focal loss to combat dataset imbalance.
+- **Results**: Delivered 99.8% precision and 98.4% recall, substantially lowering false negatives in diagnostic screening.
+- **Stack**: Python, PyTorch, Torchvision, Scikit-learn, Matplotlib.
+
+### Project 3: Autonomous Multi-Domain AI Assistant (Agentic AI)
+- **Problem**: Disjointed automation scripts lack centralized intelligence, natural voice interface, and memory persistence.
+- **Solution**: Created a modular AI desktop assistant supporting dynamic voice synthesis, automated web reconnaissance, calendar scheduling, and system operations.
+- **Stack**: Python, SpeechRecognition, Pyttsx3, BeautifulSoup4, Requests, Tkinter.
+
+### Project 4: Telecom Customer Churn Prediction Engine (Enterprise Analytics)
+- **Problem**: Customer churn costs telecommunications providers millions annually.
+- **Solution**: Engineered an end-to-end predictive modeling pipeline utilizing Random Forest, Gradient Boosting, and XGBoost with SHAP interpretability to rank key churn drivers.
+- **Results**: Achieved 89.2% ROC-AUC score and provided actionable retention insights.
+- **Stack**: Python, Scikit-learn, XGBoost, Pandas, SHAP, Power BI.
+
+## Verified Credentials
+- Google AI Essentials - Google / Coursera
+- Deep Learning Specialization - Infosys Springboard
+- Database Management Systems - NPTEL / IIT Kharagpur
+- Computer Communications and Networks - Cisco Networking Academy

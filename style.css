@@ -1039,6 +1039,114 @@ button, input, textarea {
   border-bottom: 1px solid var(--border-black);
 }
 
+/* =========================================================
+   05 / FAQ & QUICK FACTS (AEO & DIRECT ANSWERS)
+   ========================================================= */
+.faq-section {
+  background-color: var(--bg-main);
+  border-top: 1px solid var(--border-black);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.faq-left {
+  position: sticky;
+  top: 100px;
+}
+
+.faq-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 16px;
+  max-width: 440px;
+}
+
+.faq-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  background-color: var(--bg-box-tint);
+  border: 1px solid var(--border-black);
+  padding: 8px 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-black);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border: 1px solid var(--border-black);
+  background-color: var(--bg-box-tint);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item[open] {
+  background-color: var(--bg-main);
+  box-shadow: 4px 4px 0px var(--border-black);
+}
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-black);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-coral);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 24px 22px 24px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-body);
+  border-top: 1px dashed #DCD8CE;
+  padding-top: 16px;
+}
+
+.faq-answer p {
+  margin-bottom: 8px;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1325,9 +1433,12 @@ button, input, textarea {
   .hero-section, .section {
     padding: 64px 24px;
   }
-  .hero-container, .profile-top-grid, .work-header, .toolkit-grid, .experience-grid, .contact-grid {
+  .hero-container, .profile-top-grid, .work-header, .toolkit-grid, .experience-grid, .faq-grid, .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .faq-left {
+    position: static;
   }
   .hero-title {
     font-size: 56px;

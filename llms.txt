@@ -1,0 +1,45 @@
+# Aakash S S - AI & Machine Learning Engineer
+
+> Official AI, Machine Learning Engineer, and Data Scientist portfolio for Aakash S S. Specializing in Deep Learning, Computer Vision, MLOps, NLP/RAG architectures, and predictive analytics.
+
+## Quick Facts
+- **Name**: Aakash S S
+- **Role**: AI & Machine Learning Engineer / Data Scientist
+- **Location**: Chennai, Tamil Nadu, India
+- **Education**: B.Tech in Computer Science and Engineering (Artificial Intelligence & Data Science) at Vel Tech University (CGPA: 7.97)
+- **Status**: Open to full-time AI/ML Engineering roles, Data Science opportunities, and research collaborations
+- **Website**: https://aakash1552005.github.io/
+- **GitHub**: https://github.com/aakash1552005
+- **LinkedIn**: https://www.linkedin.com/in/aakash-s-s-88b91a301
+- **Email**: aakash1552005@gmail.com
+- **Phone**: +91 88259 09003
+
+## Core Technical Competencies
+- **Machine Learning & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, LightGBM, Random Forest, CNNs, ResNet, MobileNet, LSTMs, Neural Networks, Transfer Learning
+- **Computer Vision**: OpenCV, Object Detection, Image Classification, Semantic Segmentation, Real-time Camera Inference
+- **NLP & Generative AI**: Retrieval-Augmented Generation (RAG), LangChain, Hugging Face Transformers, Tokenization, LLM Fine-Tuning
+- **MLOps & Cloud**: Docker, Kubernetes, FastAPI, Flask, MLflow, CI/CD, Git, GitHub Actions, Linux
+- **Data Engineering & Analytics**: Python, Pandas, NumPy, SQL (PostgreSQL, MySQL), Power BI, DAX, Seaborn, Matplotlib
+
+## Featured Projects & Benchmarks
+- **Traffic Sign Classification System**: Autonomous driving computer vision pipeline utilizing deep CNN architectures across 43 traffic sign classes with **88.94% top-1 accuracy** and **<15ms inference latency**.
+- **Pediatric Pneumonia Detection**: Chest X-ray diagnostic classification model built with transfer learning on CNN/DenseNet, achieving **99.8% precision** and **98.4% recall** to minimize false negatives.
+- **Autonomous Multi-Domain AI Assistant**: Voice and text AI agent supporting 15+ automated tasks, system automation, web intelligence, and conversational memory.
+- **Telecom Customer Churn Predictor**: Production-ready predictive classifier utilizing Random Forest and XGBoost with **89.2% ROC-AUC score**, featuring SHAP feature explainability.
+- **Interactive High-Performance Developer Portfolio**: Responsive, ultra-fast web application with sub-second FCP, structured Schema.org graphs, and Lighthouse performance compliance.
+
+## Professional Experience
+- **Machine Learning Intern** at **RINEX Technologies** (Mar 2024 – Apr 2024): Developed end-to-end predictive pipelines, automated data preprocessing, engineered cross-validated feature sets, and deployed RESTful model inference endpoints.
+- **Student Coordinator / Researcher** at **AICTE IDEA Lab, Vel Tech University** (Jul 2023 – Present): Conducted hands-on technical workshops in Embedded AI, IoT prototyping, and 3D fabrication for 100+ engineering students.
+
+## Certifications
+- **Google AI Essentials** (Coursera / Google)
+- **Deep Learning Specialization** (Infosys Springboard)
+- **Database Management Systems (DBMS)** (NPTEL / IIT Kharagpur)
+- **Computer Communications & Networks** (Cisco Networking Academy)
+
+## Primary Documents & Endpoints
+- Portfolio Website: https://aakash1552005.github.io/
+- Resume PDF: https://aakash1552005.github.io/Aakash_SS_Resume.pdf
+- Full LLM Context: https://aakash1552005.github.io/llms-full.txt
+- Sitemap: https://aakash1552005.github.io/sitemap.xml

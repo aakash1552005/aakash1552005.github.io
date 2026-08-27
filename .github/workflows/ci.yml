@@ -20,6 +20,8 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.14.x
+
       - name: Run Lighthouse CI Audit
-        run: |
-          npx @lhci/cli autorun
+        run: lhci autorun

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aakash1552005.github.io/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aakash1552005.github.io/headshot.jpg</image:loc>
+      <image:title>Aakash S S - AI and Machine Learning Engineer</image:title>
+      <image:caption>Aakash S S Developer Portfolio Portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aakash1552005.github.io/profile.jpg</image:loc>
+      <image:title>Aakash S S - Profile</image:title>
+      <image:caption>Aakash S S AI Specialist Profile</image:caption>
+    </image:image>
   </url>
 </urlset>
