@@ -1,6 +1,27 @@
 {
   "headers": [
     {
+      "source": "/(.*)\\.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://aakash1552005.github.io/$1.pdf>; rel=\"canonical\""
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
         {
