@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /google46b57f0563c7ba47.html
 
 # Generative AI & Answer Engine Crawlers (Explicitly Allowed for GEO & AEO)
 User-agent: GPTBot
