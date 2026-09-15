@@ -25,55 +25,61 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
   - Year: 2021
 
 ## Professional Work Experience
-### 1. Machine Learning Intern | RINEX Technologies
-- **Duration**: March 2024 – April 2024
-- **Location**: Remote / Bangalore, India
+### 1. AI & Embedded Systems Intern | Vel Tech AICTE IDEA Lab
+- **Duration**: May 2026 – July 2026
+- **Location**: Chennai, India
 - **Key Deliverables**:
-  - Architected and trained machine learning classification and regression pipelines using Python, Scikit-learn, and XGBoost.
-  - Formulated automated data cleaning routines handling missing values, categorical encoding, and outlier mitigation on datasets exceeding 50,000 records.
-  - Performed hyperparameter tuning with Grid Search and Bayesian Optimization, boosting model prediction accuracy by 14%.
-  - Built scalable REST endpoints using FastAPI for real-time model inference.
+  - Designed AI-powered software and embedded system solutions — integrated sensors, microcontrollers (ESP32-CAM, Arduino), and AI models into intelligent hardware.
+  - Worked on rapid prototyping, hardware-in-the-loop testing, and deployment of AI-enabled embedded systems.
 
-### 2. Student Coordinator / Technical Mentor | AICTE IDEA Lab
-- **Duration**: July 2023 – Present
-- **Institution**: Vel Tech University
+### 2. Data Scientist Intern | RINEX Technologies
+- **Duration**: September 2025 – November 2025
+- **Location**: Bangalore, India
 - **Key Deliverables**:
-  - Led and mentored over 100 undergraduate students in embedded intelligence, sensor fusion, computer vision prototypes, and IoT devices.
-  - Facilitated technical workshops on microcontrollers, Python scripting for automation, and 3D prototyping.
+  - Executed end-to-end Data Science and ML projects: data preprocessing, exploratory data analysis (EDA), feature engineering, predictive modeling, and model evaluation on business problems.
+  - Developed analytical reports and interactive visualizations using Power BI and DAX to communicate actionable insights to stakeholders.
 
 ## Technical Skills & Arsenal
 - **Languages**: Python (Advanced), SQL (PostgreSQL, MySQL), C++, HTML5, CSS3, JavaScript (ES6+)
 - **Machine Learning & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, LightGBM, CatBoost, OpenCV, NumPy, Pandas, SciPy, Matplotlib, Seaborn
 - **NLP & Generative AI**: Hugging Face Transformers, LangChain, RAG Pipelines, Vector Embeddings (ChromaDB, FAISS), Sentence Transformers
-- **MLOps & DevOps**: FastAPI, Flask, Docker, Kubernetes basics, Git, GitHub Actions, MLflow, Linux Bash, Vercel, Netlify
+- **MLOps & DevOps**: FastAPI, Flask, Docker, Kubernetes, Git, GitHub Actions, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC, Linux Bash
 - **Data Analytics & BI**: Power BI, DAX, Excel Advanced Modeling, Statistical Hypothesis Testing, EDA (Exploratory Data Analysis)
 
 ## Detailed Project Portfolio
-### Project 1: Traffic Sign Recognition System (Computer Vision / Autonomous Systems)
-- **Problem**: Autonomous vehicles require instant, millimeter-accurate detection and classification of road signs under varying lighting, weather, and occlusions.
-- **Solution**: Developed a Deep Convolutional Neural Network (CNN) trained on the German Traffic Sign Recognition Benchmark (GTSRB) with data augmentation (shear, zoom, contrast shifts).
-- **Results**: Achieved 88.94% top-1 validation accuracy across 43 distinct traffic sign classes with sub-15ms inference latency per frame.
-- **Stack**: Python, TensorFlow, Keras, OpenCV, NumPy, Streamlit.
+### Project 1: Telco Customer Churn MLOps Platform (MLOps & Production ML)
+- **Problem**: ML models often fail in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak lineage, and undetected drift.
+- **Solution**: Engineered an end-to-end, reproducible MLOps system that automates the journey from versioned customer data to monitored production inference and model promotion.
+- **Results**: Achieved 0.847 ROC-AUC, improved recall from 48% to 80% through threshold optimization, and established automated CI/CD, experiment tracking, and drift-aware retraining.
+- **Stack**: Python, XGBoost, FastAPI, Docker, Kubernetes, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC.
+- **Repository**: https://github.com/aakash1552005/telco-churn-mlops
 
-### Project 2: Pediatric Pneumonia Detection via Chest Radiography (Medical AI)
-- **Problem**: Early pediatric pneumonia diagnosis is vital in clinical environments with limited radiologist availability.
-- **Solution**: Built a medical deep learning classifier utilizing fine-tuned transfer learning architectures with focal loss to combat dataset imbalance.
-- **Results**: Delivered 99.8% precision and 98.4% recall, substantially lowering false negatives in diagnostic screening.
-- **Stack**: Python, PyTorch, Torchvision, Scikit-learn, Matplotlib.
+### Project 2: TN Government AI Scheme Assistant (Conversational AI & RAG)
+- **Problem**: Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits without hallucination.
+- **Solution**: Developed a bilingual (English/Tamil) RAG conversational assistant utilizing ChromaDB embeddings and Groq LLaMA 3.3 for authoritative scheme discovery.
+- **Results**: 86/86 validation tests passed, 100% pass rate on 50-query benchmark; deployed for real-time scheme discovery.
+- **Stack**: FastAPI, Next.js, PostgreSQL, ChromaDB, Groq LLaMA 3.3, RAG, Railway.
+- **Repository**: https://github.com/aakash1552005/TNGov-AI-Assistant
 
-### Project 3: Autonomous Multi-Domain AI Assistant (Agentic AI)
-- **Problem**: Disjointed automation scripts lack centralized intelligence, natural voice interface, and memory persistence.
-- **Solution**: Created a modular AI desktop assistant supporting dynamic voice synthesis, automated web reconnaissance, calendar scheduling, and system operations.
-- **Stack**: Python, SpeechRecognition, Pyttsx3, BeautifulSoup4, Requests, Tkinter.
+### Project 3: AI-Based Smart Garbage Segregation Bin (Computer Vision & Edge IoT)
+- **Problem**: Manual waste segregation is inefficient and inconsistent; disposal points need low-cost autonomous sorting that remains functional even when cameras degrade.
+- **Solution**: Built an autonomous segregation system combining camera-based real-time 5-category waste classification with sensor fallback logic.
+- **Results**: Real-time 5-category waste classification with sensor-based fallback, enabling continuous autonomous segregation under both vision-enabled and degraded operating conditions.
+- **Stack**: Arduino (C++), ESP32-CAM, Flask, TensorFlow.
+- **Repository**: https://github.com/aakash1552005/smart-waste-segregation-bin
 
-### Project 4: Telecom Customer Churn Prediction Engine (Enterprise Analytics)
-- **Problem**: Customer churn costs telecommunications providers millions annually.
-- **Solution**: Engineered an end-to-end predictive modeling pipeline utilizing Random Forest, Gradient Boosting, and XGBoost with SHAP interpretability to rank key churn drivers.
-- **Results**: Achieved 89.2% ROC-AUC score and provided actionable retention insights.
-- **Stack**: Python, Scikit-learn, XGBoost, Pandas, SHAP, Power BI.
+### Project 4: Smart Child Nutrition Deficiency Tracking System (Full-Stack & Predictive Analytics)
+- **Problem**: Child nutrition monitoring often depends on fragmented, manually maintained growth records, limiting early intervention for nutritional risks.
+- **Solution**: Built an end-to-end healthcare platform for early risk stratification, multi-deficiency detection, and long-term trend forecasting.
+- **Results**: 86.4% risk-classification accuracy, 70% high-risk recall, 92.69% mean accuracy across 7 deficiency predictions, and 6-month nutrition trend forecasting.
+- **Stack**: Next.js, TypeScript, Tailwind CSS.
+- **Repository**: https://github.com/aakash1552005/Smart-Child-Nutrition-Deficiency-Tracking-System
 
 ## Verified Credentials
-- Google AI Essentials - Google / Coursera
-- Deep Learning Specialization - Infosys Springboard
-- Database Management Systems - NPTEL / IIT Kharagpur
-- Computer Communications and Networks - Cisco Networking Academy
+- **Infosys Springboard** — Exploring Data Visualization (Feb 2026)
+- **RINEX (Google for Education Partner)** — Artificial Intelligence (Nov 2025)
+- **RapidMiner (Altair)** — Data Engineering Master Certification (Nov 2025)
+- **Deloitte** — Data Analytics Job Simulation (Sep 2025)
+- **Tata Group** — Data Visualisation: Empowering Business with Effective Insights (Sep 2025)
+- **Infosys Springboard** — AWS Solutions Architect: Security & Data Privacy (Apr 2025)
+- **NVIDIA** — Introduction to Networking (Apr 2025)
