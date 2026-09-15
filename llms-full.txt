@@ -25,7 +25,7 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
   - Year: 2021
 
 ## Professional Work Experience
-### 1. AI & Embedded Systems Intern | Vel Tech AICTE IDEA Lab
+### 1. AI & Embedded Systems Intern | AICTE
 - **Duration**: May 2026 – July 2026
 - **Location**: Chennai, India
 - **Key Deliverables**:

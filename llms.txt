@@ -28,7 +28,7 @@
 - **Smart Child Nutrition Deficiency Tracking System**: Full-stack predictive analytics platform delivering **86.4% risk-classification accuracy**, **70% high-risk recall**, **92.69% mean accuracy across 7 deficiency predictions**, and 6-month nutrition trend forecasting.
 
 ## Professional Experience
-- **AI & Embedded Systems Intern** at **Vel Tech AICTE IDEA Lab** (May 2026 – Jul 2026): Designed AI-powered software and embedded system solutions, integrating sensors, microcontrollers, and AI models into intelligent hardware with rapid prototyping and testing.
+- **AI & Embedded Systems Intern** at **AICTE** (May 2026 – Jul 2026): Designed AI-powered software and embedded system solutions, integrating sensors, microcontrollers, and AI models into intelligent hardware with rapid prototyping and testing.
 - **Data Scientist Intern** at **RINEX Technologies, Bangalore** (Sep 2025 – Nov 2025): Developed end-to-end data preprocessing, EDA, feature engineering, predictive models, and model evaluation on business datasets; translated insights into Power BI and DAX dashboards.
 
 ## Certifications
