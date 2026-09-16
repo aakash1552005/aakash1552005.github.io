@@ -45,5 +45,7 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Sitemaps and LLM Documentation
+# Sitemaps and Machine-Readable LLM Discovery
 Sitemap: https://aakash1552005.github.io/sitemap.xml
+# LLM Context: https://aakash1552005.github.io/llms.txt
+# LLM Full Documentation: https://aakash1552005.github.io/llms-full.txt

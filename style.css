@@ -106,6 +106,16 @@ button, input, textarea {
   outline: 2px solid var(--accent-coral);
 }
 
+/* Accessibility: High-Visibility Focus Indicators (WCAG 2.1 AA) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent-coral) !important;
+  outline-offset: 3px !important;
+}
+
 /* =========================================================
    HEADER (NAVIGATION BAR)
    ========================================================= */
@@ -1134,6 +1144,16 @@ button, input, textarea {
 
 .faq-summary::-webkit-details-marker {
   display: none;
+}
+
+.faq-question {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
 }
 
 .faq-icon {

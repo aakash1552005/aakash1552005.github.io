@@ -11,5 +11,6 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Link: <https://aakash1552005.github.io/llms.txt>; rel="alternate"; type="text/plain"
   Content-Security-Policy: default-src 'self' https:; script-src 'self' 'nonce-aakash2026ldjson' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self';
 
