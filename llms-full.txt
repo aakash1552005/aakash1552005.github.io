@@ -68,12 +68,13 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 - **Stack**: Arduino (C++), ESP32-CAM, Flask, TensorFlow.
 - **Repository**: https://github.com/aakash1552005/smart-waste-segregation-bin
 
-### Project 4: Smart Child Nutrition Deficiency Tracking System (Full-Stack & Predictive Analytics)
-- **Problem**: Child nutrition monitoring often depends on fragmented, manually maintained growth records, limiting early intervention for nutritional risks.
-- **Solution**: Built an end-to-end healthcare platform for early risk stratification, multi-deficiency detection, and long-term trend forecasting.
-- **Results**: 86.4% risk-classification accuracy, 70% high-risk recall, 92.69% mean accuracy across 7 deficiency predictions, and 6-month nutrition trend forecasting.
-- **Stack**: Next.js, TypeScript, Tailwind CSS.
-- **Repository**: https://github.com/aakash1552005/Smart-Child-Nutrition-Deficiency-Tracking-System
+### Project 4: Autonomous Data Analyst (ADA) (Multi-Agent AI & Production AutoML)
+- **Problem**: Enterprise data analysis is constrained by tedious manual workflows — diagnosing missingness, type coercion, masking sensitive PII, exploratory charting, baseline model tuning, compiling decks, and answering ad-hoc stakeholder questions without data hallucinations.
+- **Solution**: Engineered a complete, production-grade 7-agent autonomous pipeline communicating via a validated Dataset Intelligence Object (DIO) for reversible cleaning, PII shielding, automated model competition, grounded insight synthesis, and interactive natural-language querying.
+- **Results**: 100% verified numerical grounding, zero arbitrary code execution, automated PDF/PPTX report generation in <25 seconds, and 590 unit tests passing at 100%.
+- **Stack**: Python, Multi-Agent System, AutoML (LightGBM, XGBoost, Random Forest, Scikit-learn), Streamlit, Flask REST API, n8n Automations, ReportLab, python-pptx.
+- **Repository**: https://github.com/aakash1552005/Autonomous-Data-Analyst
+- **Live Demo**: https://autonomous--data--analyst.streamlit.app/
 
 ## Verified Credentials
 - **Infosys Springboard** — Exploring Data Visualization (Feb 2026)

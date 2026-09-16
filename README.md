@@ -28,7 +28,7 @@ A high-performance Neo-Brutalist developer portfolio built with architectural la
 1. **Telco Customer Churn MLOps Platform** — Python, XGBoost, FastAPI, Docker, Kubernetes, MLflow, Prometheus/Grafana, Jenkins CI/CD, DVC (0.847 ROC-AUC, Recall lifted 48% → 80%, automated drift-aware retraining)
 2. **TN Government AI Scheme Assistant** — FastAPI, Next.js, PostgreSQL, ChromaDB, Groq LLaMA 3.3, RAG, Railway (86/86 validation tests passed, 100% benchmark, bilingual scheme discovery)
 3. **AI-Based Smart Garbage Segregation Bin** — Arduino, ESP32-CAM, Flask, TensorFlow (Real-time 5-category waste classification with sensor fallback logic)
-4. **Smart Child Nutrition Deficiency Tracking System** — Next.js, TypeScript, Tailwind CSS (86.4% risk accuracy, 70% recall, 92.69% mean multi-deficiency accuracy, 6-month forecasting)
+4. **Autonomous Data Analyst (ADA)** — Python, Multi-Agent Pipeline, AutoML (LightGBM/XGBoost), Streamlit, Flask REST API, n8n Automations (7 autonomous agents, 100% numerically-grounded outputs, zero arbitrary code exec, automated PDF/PPTX in <25s, 590 passing unit tests) · [Live Demo](https://autonomous--data--analyst.streamlit.app/) · [Repo](https://github.com/aakash1552005/Autonomous-Data-Analyst)
 
 ---
 
