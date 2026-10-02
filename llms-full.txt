@@ -29,8 +29,8 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 - **Duration**: May 2026 – July 2026
 - **Location**: Chennai, India
 - **Key Deliverables**:
-  - Designed AI-powered software and embedded system solutions — integrated sensors, microcontrollers (ESP32-CAM, Arduino), and AI models into intelligent hardware.
-  - Worked on rapid prototyping, hardware-in-the-loop testing, and deployment of AI-enabled embedded systems.
+  - **Hardware – Smart Waste Segregation Bin**: Built a 5-category waste classifier (wet, dry, plastic, biomedical, recyclable) via two-phase transfer learning on MobileNetV2 (frozen-head training, then fine-tuning last 30 layers), achieving 97.76% validation accuracy. Remapped ~15K images across public datasets with class-weighted loss and augmentation. Deployed inference server integrated with ESP32-CAM and moisture sensor fallback.
+  - **Software – Child Nutrition Tracking System**: Developed a cloud-based analytics platform (Next.js, Supabase, Vercel) for a government Child Development Department, applying predictive AI models to track malnutrition risk, health records, and welfare scheme delivery across child beneficiaries.
 
 ### 2. Data Scientist Intern | RINEX Technologies
 - **Duration**: September 2025 – November 2025

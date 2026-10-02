@@ -28,7 +28,7 @@
 - **Autonomous Data Analyst (ADA)**: Enterprise-grade multi-agent tabular intelligence and AutoML system orchestrating **7 specialized autonomous agents**, delivering **100% verified numerical grounding**, zero arbitrary code execution, automated executive PDF/PPTX reports in under 25s, and a **590-test suite passing at 100%**. Live Cloud Demo: https://autonomous--data--analyst.streamlit.app/ | Repository: https://github.com/aakash1552005/Autonomous-Data-Analyst
 
 ## Professional Experience
-- **AI & Embedded Systems Intern** at **AICTE** (May 2026 – Jul 2026): Designed AI-powered software and embedded system solutions, integrating sensors, microcontrollers, and AI models into intelligent hardware with rapid prototyping and testing.
+- **AI & Embedded Systems Intern** at **AICTE** (May 2026 – Jul 2026): Designed AI-powered software and embedded solutions: built a 5-category waste segregation classifier (97.76% validation accuracy) via MobileNetV2 with ESP32-CAM and sensor fallback, and engineered a cloud predictive AI platform (Next.js, Supabase, Vercel) tracking child malnutrition risk.
 - **Data Scientist Intern** at **RINEX Technologies, Bangalore** (Sep 2025 – Nov 2025): Developed end-to-end data preprocessing, EDA, feature engineering, predictive models, and model evaluation on business datasets; translated insights into Power BI and DAX dashboards.
 
 ## Certifications
