@@ -53,20 +53,22 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 - **Results**: Achieved 0.847 ROC-AUC, improved recall from 48% to 80% through threshold optimization, and established automated CI/CD, experiment tracking, and drift-aware retraining.
 - **Stack**: Python, XGBoost, FastAPI, Docker, Kubernetes, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC.
 - **Repository**: https://github.com/aakash1552005/telco-churn-mlops
+- **Live Demo**: https://telco-churn-mlops.streamlit.app/
 
 ### Project 2: TN Government AI Scheme Assistant (Conversational AI & RAG)
 - **Problem**: Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits without hallucination.
 - **Solution**: Developed a bilingual (English/Tamil) RAG conversational assistant utilizing ChromaDB embeddings and Groq LLaMA 3.3 for authoritative scheme discovery.
-- **Results**: 86/86 validation tests passed, 100% pass rate on 50-query benchmark; deployed for real-time scheme discovery.
-- **Stack**: FastAPI, Next.js, PostgreSQL, ChromaDB, Groq LLaMA 3.3, RAG, Railway.
+- **Results**: 86/86 validation tests passed, 100% pass rate on 50-query benchmark, 1,420 chunks across 37+ schemes, and zero hallucination tolerance.
+- **Stack**: FastAPI, Next.js, PostgreSQL, ChromaDB, Groq LLaMA 3.3, RAG, Vercel.
 - **Repository**: https://github.com/aakash1552005/TNGov-AI-Assistant
+- **Live Demo**: https://tn-gov-ai-assistant.vercel.app/
 
-### Project 3: AI-Based Smart Garbage Segregation Bin (Computer Vision & Edge IoT)
-- **Problem**: Manual waste segregation is inefficient and inconsistent; disposal points need low-cost autonomous sorting that remains functional even when cameras degrade.
-- **Solution**: Built an autonomous segregation system combining camera-based real-time 5-category waste classification with sensor fallback logic.
-- **Results**: Real-time 5-category waste classification with sensor-based fallback, enabling continuous autonomous segregation under both vision-enabled and degraded operating conditions.
-- **Stack**: Arduino (C++), ESP32-CAM, Flask, TensorFlow.
-- **Repository**: https://github.com/aakash1552005/smart-waste-segregation-bin
+### Project 3: rerunner (AI Agent Infrastructure & Open Source)
+- **Problem**: Testing AI agents is non-deterministic, slow, and expensive. Flaky external API calls, model drift, and non-reproducible multi-step agent trajectories burn API credits and cause opaque failures in CI/CD pipelines.
+- **Solution**: Engineered a deterministic flight recorder, zero-cloud-cost CI replay engine, and time-travel debugger for AI agents with a dual-mode zero-dependency JSONL & SQLite transport.
+- **Results**: 114 unit/integration tests passing at 100%, sub-0.5ms recording overhead, and time-travel trajectory replay.
+- **Stack**: Python, AI Agents, Deterministic Replay, Time-Travel Debugging, Pytest Plugin, SQLite / JSONL, Open Source.
+- **Repository**: https://github.com/aakash1552005/rerunner
 
 ### Project 4: Autonomous Data Analyst (ADA) (Multi-Agent AI & Production AutoML)
 - **Problem**: Enterprise data analysis is constrained by tedious manual workflows — diagnosing missingness, type coercion, masking sensitive PII, exploratory charting, baseline model tuning, compiling decks, and answering ad-hoc stakeholder questions without data hallucinations.
