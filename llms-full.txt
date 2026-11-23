@@ -50,7 +50,7 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 ### Project 1: Telco Customer Churn MLOps Platform (MLOps & Production ML)
 - **Problem**: ML models often fail in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak lineage, and undetected drift.
 - **Solution**: Engineered an end-to-end, reproducible MLOps system that automates the journey from versioned customer data to monitored production inference and model promotion.
-- **Results**: Achieved 0.847 ROC-AUC, improved recall from 48% to 80% through threshold optimization, and established automated CI/CD, experiment tracking, and drift-aware retraining.
+- **Results**: Achieved 0.847 ROC-AUC, improved recall from 52.7% to 75.1% (+42.6% relative gain) through threshold optimization (0.3254), and established automated CI/CD, experiment tracking, and drift-aware retraining.
 - **Stack**: Python, XGBoost, FastAPI, Docker, Kubernetes, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC.
 - **Repository**: https://github.com/aakash1552005/telco-churn-mlops
 - **Live Demo**: https://telco-churn-mlops.streamlit.app/
