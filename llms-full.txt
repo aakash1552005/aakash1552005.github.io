@@ -1,7 +1,7 @@
 # Aakash S S - Full Portfolio & Technical Knowledge Context
 
 ## Biographical Overview
-Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently based in Chennai, Tamil Nadu, India. He holds a Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Data Science from Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology. He has demonstrated domain expertise across Deep Learning, Computer Vision, Retrieval-Augmented Generation (RAG), and end-to-end MLOps deployment.
+Aakash S S is an AI & Machine Learning Engineer, MLOps Engineer, and Data Scientist based in Chennai, Tamil Nadu, India. He is a final-year Bachelor of Technology student in Computer Science and Engineering with a specialization in Artificial Intelligence and Data Science at Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology (CGPA: 7.97 / 10.0). He has demonstrated domain expertise across production MLOps pipelines (Docker, Kubernetes, Jenkins, MLflow), open-source AI tooling (`rerunner` on PyPI), Computer Vision, Hybrid Retrieval-Augmented Generation (RAG), and competitive machine learning (Kaggle Global Rank 314 / 2,432, Top 13%).
 
 ## Contact & Profiles
 - Full Name: Aakash S S
@@ -11,12 +11,14 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 - GitHub: https://github.com/aakash1552005
 - LinkedIn: https://www.linkedin.com/in/aakash-s-s-88b91a301
 - Location: Chennai, Tamil Nadu, India
+- Availability: Actively open to full-time roles and immediate internship-to-hire positions in Machine Learning Engineering, MLOps Engineering, and Data Science. Open to on-site, hybrid, and remote roles across Chennai, Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR, and global remote.
 
 ## Academic History
 - **Undergraduate Degree**: Bachelor of Technology (B.Tech) in Computer Science and Engineering (Artificial Intelligence and Data Science)
   - Institution: Vel Tech University, Avadi, Chennai, India
-  - Timeline: 2023 – Present (Expected Graduation: 2027)
+  - Timeline: Aug 2023 – May 2027
   - Current Academic Standing: CGPA 7.97 / 10.0
+  - Relevant Coursework: Machine Learning, Data Structures & Algorithms, DBMS, Operating Systems, Statistics & Probability
 - **Senior Secondary (12th)**: All India Senior School Certificate Examination (AISSCE), CBSE
   - School: Jain Vidyaashram, Chennai
   - Year: 2023
@@ -25,50 +27,57 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
   - Year: 2021
 
 ## Professional Work Experience
-### 1. AI & Embedded Systems Intern | AICTE
+### 1. AI & Embedded Systems Intern | AICTE IDEA Lab, Vel Tech University
 - **Duration**: May 2026 – July 2026
 - **Location**: Chennai, India
 - **Key Deliverables**:
-  - **Hardware – Smart Waste Segregation Bin**: Built a 5-category waste classifier (wet, dry, plastic, biomedical, recyclable) via two-phase transfer learning on MobileNetV2 (frozen-head training, then fine-tuning last 30 layers), achieving 97.76% validation accuracy. Remapped ~15K images across public datasets with class-weighted loss and augmentation. Deployed inference server integrated with ESP32-CAM and moisture sensor fallback.
-  - **Software – Child Nutrition Tracking System**: Developed a cloud-based analytics platform (Next.js, Supabase, Vercel) for a government Child Development Department, applying predictive AI models to track malnutrition risk, health records, and welfare scheme delivery across child beneficiaries.
+  - **Child Malnutrition Tracking Platform**: Engineered a cloud predictive analytics platform (Next.js, Supabase, Flask) with a soft-voting ensemble (XGBoost, LightGBM, Random Forest) reaching 86.4% risk accuracy and 70% recall on high-risk cases; load-tested at 500 requests/s with 0% failures.
+  - **AI Waste-Sorting Smart Bin**: Built an AI waste-sorting bin for Greater Chennai Corporation featuring a MobileNetV2 classifier (97.76% validation accuracy) served via Flask with ESP32-CAM and Arduino hardware, a metal-sensor bypass, and a moisture-sensor fallback below 60% confidence.
 
 ### 2. Data Scientist Intern | RINEX Technologies
 - **Duration**: September 2025 – November 2025
 - **Location**: Bangalore, India
 - **Key Deliverables**:
-  - Executed end-to-end Data Science and ML projects: data preprocessing, exploratory data analysis (EDA), feature engineering, predictive modeling, and model evaluation on business problems.
-  - Developed analytical reports and interactive visualizations using Power BI and DAX to communicate actionable insights to stakeholders.
+  - Developed end-to-end computer vision and NLP classification pipelines covering preprocessing, feature engineering, and model validation.
+  - Built a real-time CNN face-mask detector (OpenCV, Keras) achieving 92.3% test accuracy on live video streams.
+  - Engineered an SMS spam classifier on 5,572 messages using NLTK preprocessing and TF-IDF feature extraction; benchmarked Naive Bayes, Logistic Regression, and SVM, achieving 98% accuracy with SVM.
+
+## Honors & Open Source Achievements
+- **Kaggle Spaceship Titanic Competition**: Global Rank 314 / 2,432 (Top 13% Globally) with score 0.80944 using a 5-fold Stratified LightGBM + CatBoost ensemble with domain feature engineering.
+- **Open-Source Package Author**: Creator and maintainer of `rerunner` (v0.3.5 on PyPI), an open-source flight recorder for AI agents featured on Hacker News (Show HN).
+- **Upstream Open-Source Contributions**: 1,000+ GitHub contributions with merged pull requests to leading AI repositories, including **Linux Foundation AI (`kedro-plugins`)**, **sktime**, **Hugging Face (`accelerate`)**, and **ZenML**.
 
 ## Technical Skills & Arsenal
-- **Languages**: Python (Advanced), SQL (PostgreSQL, MySQL), C++, HTML5, CSS3, JavaScript (ES6+)
-- **Machine Learning & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, LightGBM, CatBoost, OpenCV, NumPy, Pandas, SciPy, Matplotlib, Seaborn
-- **NLP & Generative AI**: Hugging Face Transformers, LangChain, RAG Pipelines, Vector Embeddings (ChromaDB, FAISS), Sentence Transformers
-- **MLOps & DevOps**: FastAPI, Flask, Docker, Kubernetes, Git, GitHub Actions, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC, Linux Bash
-- **Data Analytics & BI**: Power BI, DAX, Excel Advanced Modeling, Statistical Hypothesis Testing, EDA (Exploratory Data Analysis)
+- **Languages & Backend**: Python, SQL (PostgreSQL), Java, JavaScript, FastAPI, Flask, REST APIs, JSON-RPC, Next.js, Streamlit
+- **Machine Learning & Deep Learning**: Scikit-learn, XGBoost, LightGBM, CatBoost, TensorFlow, Keras, OpenCV, CNNs, MobileNetV2, Transfer Learning
+- **Generative AI & Agents**: Retrieval-Augmented Generation (Hybrid RAG: BM25 + ChromaDB with Reciprocal Rank Fusion), Model Context Protocol (MCP), LLMs, Groq LLaMA 3.3, Prompt Engineering
+- **MLOps & DevOps**: MLflow, DVC, Docker, Kubernetes, Jenkins CI/CD, GitHub Actions (CI/CD with Trusted Publishing), AWS ECR, Prometheus & Grafana, Pytest, OpenTelemetry
+- **Data Engineering & Core CS**: Pandas, NumPy, Feature Engineering, Power BI, DAX, Data Structures & Algorithms, DBMS, OOP
 
-## Detailed Project Portfolio
-### Project 1: Telco Customer Churn MLOps Platform (MLOps & Production ML)
+## Detailed Flagship Project Portfolio
+### Project 1: rerunner (AI Agent Infrastructure & Open Source)
+- **Problem**: Testing AI agents is non-deterministic, slow, and expensive. Flaky external API calls, model drift, and non-reproducible multi-step agent trajectories burn API credits and cause opaque failures in CI/CD pipelines.
+- **Solution**: Engineered a deterministic flight recorder, zero-cloud-cost CI replay engine (<0.05s per replay), and time-travel debugger for AI agents with a dual-mode zero-dependency JSONL & SQLite transport. Added native Model Context Protocol (MCP) recording for Claude Code & Cursor, tamper-evident SHA-256 recording chains, an official GitHub Action, and a Pytest plugin.
+- **Results**: 114 unit/integration tests passing at 100%, sub-0.5ms recording overhead, and time-travel trajectory replay. Published on PyPI (v0.3.5).
+- **Stack**: Python, AI Agents, Deterministic Replay, Time-Travel Debugging, Pytest Plugin, SQLite / JSONL, Open Source.
+- **Repository**: https://github.com/aakash1552005/rerunner
+- **PyPI Package**: https://pypi.org/project/rerunner/
+
+### Project 2: Telco Customer Churn MLOps Platform (MLOps & Production ML)
 - **Problem**: ML models often fail in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak lineage, and undetected drift.
-- **Solution**: Engineered an end-to-end, reproducible MLOps system that automates the journey from versioned customer data to monitored production inference and model promotion.
-- **Results**: Achieved 0.847 ROC-AUC, improved recall from 52.7% to 75.1% (+42.6% relative gain) through threshold optimization (0.3254), and established automated CI/CD, experiment tracking, and drift-aware retraining.
+- **Solution**: Engineered an end-to-end, reproducible MLOps platform: DVC data versioning, MLflow model registry, FastAPI microservice deployed on Docker/Kubernetes, Jenkins CI/CD with AWS ECR image registry, Prometheus/Grafana monitoring, and drift-triggered retraining.
+- **Results**: Tuned an XGBoost churn model achieving 0.847 ROC-AUC, raising recall from 52.7% to 75.1% (+42.6% relative gain) through threshold optimization (0.3254); protected releases with a promotion gate and 87 unit tests; measured 10 ms P50 latency with 0% errors over 25K requests.
 - **Stack**: Python, XGBoost, FastAPI, Docker, Kubernetes, MLflow, Prometheus, Grafana, Jenkins CI/CD, DVC.
 - **Repository**: https://github.com/aakash1552005/telco-churn-mlops
 - **Live Demo**: https://telco-churn-mlops.streamlit.app/
 
-### Project 2: TN Government AI Scheme Assistant (Conversational AI & RAG)
+### Project 3: TN Government AI Scheme Assistant (Conversational AI & RAG)
 - **Problem**: Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits without hallucination.
-- **Solution**: Developed a bilingual (English/Tamil) RAG conversational assistant utilizing ChromaDB embeddings and Groq LLaMA 3.3 for authoritative scheme discovery.
-- **Results**: 86/86 validation tests passed, 100% pass rate on 50-query benchmark, 1,420 chunks across 37+ schemes, and zero hallucination tolerance.
+- **Solution**: Built and deployed a bilingual (English/Tamil) hybrid RAG assistant (BM25 + ChromaDB with reciprocal rank fusion) querying 37 welfare schemes with source citations. Added a pre-LLM guardrail against off-topic answers and a 6-model fallback chain.
+- **Results**: 86 unit tests passing, passed all 50 queries in an evaluation benchmark (40/40 Hit@5, 0.963 MRR), and zero hallucination tolerance.
 - **Stack**: FastAPI, Next.js, PostgreSQL, ChromaDB, Groq LLaMA 3.3, RAG, Vercel.
 - **Repository**: https://github.com/aakash1552005/TNGov-AI-Assistant
 - **Live Demo**: https://tn-gov-ai-assistant.vercel.app/
-
-### Project 3: rerunner (AI Agent Infrastructure & Open Source)
-- **Problem**: Testing AI agents is non-deterministic, slow, and expensive. Flaky external API calls, model drift, and non-reproducible multi-step agent trajectories burn API credits and cause opaque failures in CI/CD pipelines.
-- **Solution**: Engineered a deterministic flight recorder, zero-cloud-cost CI replay engine, and time-travel debugger for AI agents with a dual-mode zero-dependency JSONL & SQLite transport.
-- **Results**: 114 unit/integration tests passing at 100%, sub-0.5ms recording overhead, and time-travel trajectory replay.
-- **Stack**: Python, AI Agents, Deterministic Replay, Time-Travel Debugging, Pytest Plugin, SQLite / JSONL, Open Source.
-- **Repository**: https://github.com/aakash1552005/rerunner
 
 ### Project 4: Autonomous Data Analyst (ADA) (Multi-Agent AI & Production AutoML)
 - **Problem**: Enterprise data analysis is constrained by tedious manual workflows — diagnosing missingness, type coercion, masking sensitive PII, exploratory charting, baseline model tuning, compiling decks, and answering ad-hoc stakeholder questions without data hallucinations.
@@ -78,11 +87,10 @@ Aakash S S is an AI & Machine Learning Engineer and Data Scientist currently bas
 - **Repository**: https://github.com/aakash1552005/Autonomous-Data-Analyst
 - **Live Demo**: https://autonomous--data--analyst.streamlit.app/
 
-## Verified Credentials
-- **Infosys Springboard** — Exploring Data Visualization (Feb 2026)
-- **RINEX (Google for Education Partner)** — Artificial Intelligence (Nov 2025)
+## Verified Industry Credentials
+- **Databricks** — Generative AI Fundamentals Accreditation (Nov 2026)
+- **Microsoft Learn** — Get Started with AI in Azure (Nov 2026)
 - **RapidMiner (Altair)** — Data Engineering Master Certification (Nov 2025)
-- **Deloitte** — Data Analytics Job Simulation (Sep 2025)
-- **Tata Group** — Data Visualisation: Empowering Business with Effective Insights (Sep 2025)
-- **Infosys Springboard** — AWS Solutions Architect: Security & Data Privacy (Apr 2025)
+- **Microsoft Learn** — Get Started Building with Power BI (Sep 2025)
+- **Microsoft Learn** — Discover Data Analysis (Sep 2025)
 - **NVIDIA** — Introduction to Networking (Apr 2025)

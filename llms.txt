@@ -1,13 +1,13 @@
 # Aakash S S - AI & Machine Learning Engineer
 
-> Official AI, Machine Learning Engineer, and Data Scientist portfolio for Aakash S S. Specializing in Deep Learning, Computer Vision, MLOps, NLP/RAG architectures, and predictive analytics.
+> Official AI, Machine Learning Engineer, and Data Scientist portfolio for Aakash S S. Specializing in Production MLOps, AI Agent Tooling, Deep Learning, Computer Vision, Hybrid RAG architectures, and predictive analytics.
 
 ## Quick Facts
 - **Name**: Aakash S S
-- **Role**: AI & Machine Learning Engineer / Data Scientist
+- **Role**: AI & Machine Learning Engineer / MLOps Engineer / Data Scientist
 - **Location**: Chennai, Tamil Nadu, India
-- **Education**: B.Tech in Computer Science and Engineering (Artificial Intelligence & Data Science) at Vel Tech University (CGPA: 7.97)
-- **Status**: Open to full-time AI/ML Engineering roles, Data Science opportunities, and research collaborations
+- **Education**: B.Tech in Computer Science and Engineering (Artificial Intelligence & Data Science) at Vel Tech University (CGPA: 7.97 / 10.0)
+- **Status**: Open to full-time AI/ML Engineering roles, MLOps positions, and Data Science opportunities across India (Chennai, Bengaluru, Hyderabad, Pune, Remote) and globally.
 - **Website**: https://aakash1552005.github.io/
 - **GitHub**: https://github.com/aakash1552005
 - **LinkedIn**: https://www.linkedin.com/in/aakash-s-s-88b91a301
@@ -15,29 +15,33 @@
 - **Phone**: +91 88259 09003
 
 ## Core Technical Competencies
-- **Machine Learning & Deep Learning**: TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, LightGBM, Random Forest, CNNs, ResNet, MobileNet, LSTMs, Neural Networks, Transfer Learning
-- **Computer Vision**: OpenCV, Object Detection, Image Classification, Semantic Segmentation, Real-time Camera Inference
-- **NLP & Generative AI**: Retrieval-Augmented Generation (RAG), LangChain, Hugging Face Transformers, Tokenization, LLM Fine-Tuning
-- **MLOps & Cloud**: Docker, Kubernetes, FastAPI, Flask, MLflow, CI/CD, Git, GitHub Actions, Linux
-- **Data Engineering & Analytics**: Python, Pandas, NumPy, SQL (PostgreSQL, MySQL), Power BI, DAX, Seaborn, Matplotlib
+- **Languages & Backend**: Python, SQL (PostgreSQL), Java, JavaScript, FastAPI, Flask, REST APIs, JSON-RPC, Next.js, Streamlit
+- **Machine Learning & Deep Learning**: Scikit-learn, XGBoost, LightGBM, CatBoost, TensorFlow, Keras, OpenCV, CNNs, MobileNetV2, Transfer Learning
+- **Generative AI & Agents**: Retrieval-Augmented Generation (Hybrid RAG: BM25 + ChromaDB with Reciprocal Rank Fusion), Model Context Protocol (MCP), LLMs, Prompt Engineering, Deterministic Replay
+- **MLOps & Cloud DevOps**: MLflow (experiment tracking & model registry), DVC (data versioning), Docker, Kubernetes, Jenkins CI/CD, GitHub Actions (CI/CD with Trusted Publishing), AWS ECR, Prometheus & Grafana (drift & latency monitoring), Pytest, OpenTelemetry
+- **Data Engineering & Core CS**: Pandas, NumPy, Feature Engineering, Power BI, DAX, Data Structures & Algorithms, DBMS, OOP
 
-## Featured Projects & Benchmarks
-- **Telco Customer Churn MLOps Platform**: Production-ready MLOps system featuring **0.847 ROC-AUC**, recall improved from **52.7% → 75.1% (+42.6% relative gain)** through threshold tuning (0.3254), automated CI/CD, MLflow experiment tracking, Docker/Kubernetes deployment, and drift-aware retraining. Live Demo: https://telco-churn-mlops.streamlit.app/ | Repository: https://github.com/aakash1552005/telco-churn-mlops
-- **TN Government AI Scheme Assistant (TNGov-AI-Assistant)**: Bilingual (English/Tamil) RAG assistant for citizen welfare scheme discovery achieving **86/86 validation tests passed**, 1,420 chunks across 37+ schemes, and **100% pass rate on a 50-query benchmark** using Groq LLaMA 3.3, ChromaDB, and FastAPI. Live Demo: https://tn-gov-ai-assistant.vercel.app/ | Repository: https://github.com/aakash1552005/TNGov-AI-Assistant
-- **rerunner**: Deterministic flight recorder, $0 CI replay engine, and time-travel debugger for AI agents with **114 unit/integration tests passing at 100%**, dual-mode zero-dependency JSONL/SQLite transport, and under 0.5ms recording overhead. Repository: https://github.com/aakash1552005/rerunner
-- **Autonomous Data Analyst (ADA)**: Enterprise-grade multi-agent tabular intelligence and AutoML system orchestrating **7 specialized autonomous agents**, delivering **100% verified numerical grounding**, zero arbitrary code execution, automated executive PDF/PPTX reports in under 25s, and a **590-test suite passing at 100%**. Live Cloud Demo: https://autonomous--data--analyst.streamlit.app/ | Repository: https://github.com/aakash1552005/Autonomous-Data-Analyst
+## Featured Flagship Projects
+- **rerunner (PyPI Package v0.3.5)**: Deterministic flight recorder, $0 CI replay engine (<0.05s per replay), and time-travel debugger for AI agents. Features native Model Context Protocol (MCP) recording for Claude Code & Cursor, tamper-evident SHA-256 chains, official GitHub Action, and 114 tests passing at 100%. PyPI: https://pypi.org/project/rerunner/ | Repository: https://github.com/aakash1552005/rerunner
+- **Telco Customer Churn MLOps Platform**: Production-ready MLOps platform running DVC data versioning, MLflow model registry, Docker/Kubernetes container orchestration, and Jenkins CI/CD with AWS ECR. Tuned XGBoost model achieves **0.847 ROC-AUC**, raising recall from **52.7% → 75.1% (+42.6% relative gain)** with **10 ms P50 latency** under 25K requests. Live Demo: https://telco-churn-mlops.streamlit.app/ | Repository: https://github.com/aakash1552005/telco-churn-mlops
+- **TN Government AI Scheme Assistant (TNGov-AI-Assistant)**: Production bilingual (English/Tamil) hybrid RAG assistant (BM25 + ChromaDB with reciprocal rank fusion) querying 37 welfare schemes with source citations. Achieved **40/40 Hit@5**, **0.963 MRR**, 86 unit tests, and passed a 50-query benchmark with a 6-model fallback guardrail. Live Demo: https://tn-gov-ai-assistant.vercel.app/ | Repository: https://github.com/aakash1552005/TNGov-AI-Assistant
+- **Autonomous Data Analyst (ADA)**: Production 7-agent autonomous tabular intelligence and AutoML system delivering **100% verified numerical grounding**, zero arbitrary code execution, automated executive PDF/PPTX reports in under 25s, and a **590-test suite passing at 100%**. Live Cloud Demo: https://autonomous--data--analyst.streamlit.app/ | Repository: https://github.com/aakash1552005/Autonomous-Data-Analyst
+
+## Honors & Open Source Achievements
+- **Kaggle Competitions**: Achieved **Global Rank 314 / 2,432 (Top 13% Globally)** with score **0.80944** on Kaggle Spaceship Titanic using a 5-fold Stratified LightGBM + CatBoost ensemble.
+- **Open-Source Maintainer**: Author and maintainer of `rerunner` (v0.3.5 on PyPI), featured on Hacker News (Show HN).
+- **Upstream Open-Source Contributions**: 1,000+ GitHub contributions with merged pull requests to leading AI repositories, including **Linux Foundation AI (`kedro-plugins`)**, **sktime**, **Hugging Face (`accelerate`)**, and **ZenML**.
 
 ## Professional Experience
-- **AI & Embedded Systems Intern** at **AICTE** (May 2026 – Jul 2026): Designed AI-powered software and embedded solutions: built a 5-category waste segregation classifier (97.76% validation accuracy) via MobileNetV2 with ESP32-CAM and sensor fallback, and engineered a cloud predictive AI platform (Next.js, Supabase, Vercel) tracking child malnutrition risk.
-- **Data Scientist Intern** at **RINEX Technologies, Bangalore** (Sep 2025 – Nov 2025): Developed end-to-end data preprocessing, EDA, feature engineering, predictive models, and model evaluation on business datasets; translated insights into Power BI and DAX dashboards.
+- **AI & Embedded Systems Intern** at **AICTE IDEA Lab, Vel Tech University** (May 2026 – Jul 2026): Built a cloud child-malnutrition tracking platform (Next.js, Supabase, Flask) with a soft-voting ensemble (XGBoost, LightGBM, Random Forest) reaching 86.4% risk accuracy, 70% recall on high-risk cases, and 0% failures under 500 requests/s load testing. Developed an AI waste-sorting system for Greater Chennai Corporation using MobileNetV2 (97.76% validation accuracy) with ESP32-CAM and moisture-sensor fallback below 60% confidence.
+- **Data Scientist Intern** at **RINEX Technologies, Bangalore** (Sep 2025 – Nov 2025): Developed end-to-end computer vision and NLP classification pipelines. Built a real-time CNN face-mask detector (OpenCV, Keras) achieving 92.3% test accuracy on live video streams, and engineered an SMS spam classifier across 5,572 messages using TF-IDF and SVM to reach 98% accuracy.
 
-## Certifications
-- **Infosys Springboard** — Exploring Data Visualization (Feb 2026)
-- **RINEX (Google for Education Partner)** — Artificial Intelligence (Nov 2025)
+## Verified Certifications
+- **Databricks** — Generative AI Fundamentals Accreditation (Nov 2026)
+- **Microsoft Learn** — Get Started with AI in Azure (Nov 2026)
 - **RapidMiner (Altair)** — Data Engineering Master Certification (Nov 2025)
-- **Deloitte** — Data Analytics Job Simulation (Sep 2025)
-- **Tata Group** — Data Visualisation: Empowering Business with Effective Insights (Sep 2025)
-- **Infosys Springboard** — AWS Solutions Architect: Security & Data Privacy (Apr 2025)
+- **Microsoft Learn** — Get Started Building with Power BI (Sep 2025)
+- **Microsoft Learn** — Discover Data Analysis (Sep 2025)
 - **NVIDIA** — Introduction to Networking (Apr 2025)
 
 ## Primary Documents & Endpoints
