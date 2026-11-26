@@ -490,9 +490,22 @@
               </p>
             </div>
 
+            <div class="project-block">
+              <div class="block-label">THE ARCHITECTURAL DECISION</div>
+              <p class="block-text">
+                Engineered a dual-mode zero-dependency transport: SQLite for high-speed local indexing and time-travel trajectory replay; JSONL for immutable, tamper-evident SHA-256 recording chains in CI/CD pipelines with zero cloud infrastructure overhead.
+              </p>
+            </div>
+
             <div class="outcome-box">
-              <div class="outcome-label">OUTCOME</div>
-              <div class="outcome-val">v0.3.5 on PyPI · Native Model Context Protocol (MCP) recording for Claude Code &amp; Cursor · Deterministic $0 CI replay (&lt;0.05s) · Tamper-evident SHA-256 chains · Official GitHub Action &amp; Pytest plugin</div>
+              <div class="outcome-label">VERIFIED OUTCOMES &amp; BENCHMARKS</div>
+              <div class="outcome-val">
+                <ul class="outcome-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                  <li>• <strong>Published on PyPI (v0.3.5)</strong> · Official GitHub Action &amp; Pytest plugin</li>
+                  <li>• <strong>Native MCP Recording</strong> for Claude Code, Cursor, and Anthropic/OpenAI SDKs</li>
+                  <li>• <strong>Deterministic $0 CI Replay (&lt;0.05s)</strong> · 114 unit/integration tests passing (100%)</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-tags">
@@ -521,13 +534,26 @@
             <div class="project-block">
               <div class="block-label">THE PROBLEM</div>
               <p class="block-text">
-                ML models often work in notebooks but break down in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak experiment lineage, and undetected model drift. This project builds an end-to-end, reproducible MLOps system that automates the journey from versioned customer data to monitored production inference and model promotion.
+                ML models often work in notebooks but break down in production due to fragmented data pipelines, inconsistent environments, manual deployments, weak experiment lineage, and undetected model drift.
+              </p>
+            </div>
+
+            <div class="project-block">
+              <div class="block-label">THE ARCHITECTURAL DECISION</div>
+              <p class="block-text">
+                Tuned classification threshold to 0.3254 to reflect asymmetric business costs (false negatives cost 5x more than false positives in retention). Integrated automated Jenkins CI/CD with promotion gates and drift triggers via Prometheus.
               </p>
             </div>
 
             <div class="outcome-box">
-              <div class="outcome-label">OUTCOME</div>
-              <div class="outcome-val">0.847 ROC-AUC · Recall improved 52.7% → 75.1% (thresh: 0.3254) · P50 latency 10 ms under 25K requests · 87 unit tests passing · Automated CI/CD, DVC data versioning &amp; drift monitoring</div>
+              <div class="outcome-label">VERIFIED OUTCOMES &amp; BENCHMARKS</div>
+              <div class="outcome-val">
+                <ul class="outcome-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                  <li>• <strong>0.847 ROC-AUC</strong> · Recall improved from 52.7% → <strong>75.1%</strong> (+42.6% relative gain)</li>
+                  <li>• <strong>10 ms P50 Latency</strong> · 0% errors across 25,000 load-tested requests</li>
+                  <li>• <strong>Automated CI/CD</strong> · DVC data versioning, MLflow registry, Docker/K8s on AWS ECR</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-tags">
@@ -556,13 +582,26 @@
             <div class="project-block">
               <div class="block-label">THE PROBLEM</div>
               <p class="block-text">
-                Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits, eligibility requirements, and application information. The challenge is to provide reliable English/Tamil answers from this scattered knowledge without hallucinating or returning irrelevant information.
+                Government welfare information is fragmented across 37+ scheme documents and PDFs, making it difficult for citizens to quickly find relevant benefits without hallucination or language barriers.
+              </p>
+            </div>
+
+            <div class="project-block">
+              <div class="block-label">THE ARCHITECTURAL DECISION</div>
+              <p class="block-text">
+                Hybrid lexical and semantic retrieval (BM25 + ChromaDB with Reciprocal Rank Fusion) overcomes dense embedding blindspots on Tamil administrative jargon, guarded by a pre-LLM classifier and 6-model fallback chain.
               </p>
             </div>
 
             <div class="outcome-box">
-              <div class="outcome-label">OUTCOME</div>
-              <div class="outcome-val">86 unit tests passing · Passed 50-query benchmark (40/40 Hit@5, 0.963 MRR) · 37 welfare schemes · Bilingual English/Tamil with source citations · 6-model fallback guardrail</div>
+              <div class="outcome-label">VERIFIED OUTCOMES &amp; BENCHMARKS</div>
+              <div class="outcome-val">
+                <ul class="outcome-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                  <li>• <strong>40/40 Hit@5 &amp; 0.963 MRR</strong> on 50-query evaluation benchmark</li>
+                  <li>• <strong>Bilingual English/Tamil RAG</strong> · 37 welfare schemes with source grounding</li>
+                  <li>• <strong>86 Unit Tests Passing</strong> · Zero hallucination tolerance with Groq LLaMA 3.3</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-tags">
@@ -591,13 +630,26 @@
             <div class="project-block">
               <div class="block-label">THE PROBLEM</div>
               <p class="block-text">
-                Enterprise data analysis is constrained by tedious manual workflows — diagnosing missingness, type coercion, masking sensitive PII, exploratory charting, baseline model tuning, compiling decks, and answering ad-hoc stakeholder questions without data hallucinations.
+                Enterprise data analysis is constrained by tedious manual workflows — diagnosing missingness, type coercion, masking sensitive PII, exploratory charting, baseline model tuning, and compiling decks.
+              </p>
+            </div>
+
+            <div class="project-block">
+              <div class="block-label">THE ARCHITECTURAL DECISION</div>
+              <p class="block-text">
+                Implemented a zero-arbitrary-code-execution design: eliminates security and hallucination risks of arbitrary LLM Python eval by routing operations through deterministic AST calculation graphs and validated state objects.
               </p>
             </div>
 
             <div class="outcome-box">
-              <div class="outcome-label">OUTCOME</div>
-              <div class="outcome-val">7 specialized autonomous agents · 100% verified numerical grounding · Zero arbitrary code execution · Automated executive PDF/PPTX reports in &lt; 25s · 590 unit tests passing (100%)</div>
+              <div class="outcome-label">VERIFIED OUTCOMES &amp; BENCHMARKS</div>
+              <div class="outcome-val">
+                <ul class="outcome-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                  <li>• <strong>7 Specialized Autonomous Agents</strong> with 100% verified numerical grounding</li>
+                  <li>• <strong>Automated Executive Reports</strong> (PDF/PPTX) generated in <strong>&lt; 25 seconds</strong></li>
+                  <li>• <strong>590 Unit Tests Passing (100%)</strong> · LightGBM/XGBoost competition engine</li>
+                </ul>
+              </div>
             </div>
 
             <div class="project-tags">
